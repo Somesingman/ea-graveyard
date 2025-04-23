@@ -1,6 +1,6 @@
 export enum FilterType {
     ALL = 'all',
-    EA = 'ea-only',
+    EA = 'ea',
     OTHER = 'other',
 }
 
