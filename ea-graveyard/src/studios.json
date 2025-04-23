@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Westwood Studios",
+        "status": "closed",
+        "acquiredBy": "EA",
+        "description": "Famed for creating influential titles in the RTS genre including the Command & Conquer series and entries in the Dune RTS series.",
+        "dateFounded": "1985",
+        "dateAcquired": "1998",
+        "dateClosed": "03-31-2003",
+        "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
+        "logo": "/logos/Westwood_Studios_1994.svg"
+    }, {
+        "name": "Maxis Emeryville",
+        "status": "revived",
+        "acquiredBy": "EA",
+        "description": "Revolutionized simulation games in the 90s and early 2000s with the SimCity and Sims series.",
+        "dateFounded": "1987",
+        "dateAcquired": "1997",
+        "dateClosed": "04-05-2015",
+        "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
+        "logo": "/logos/Maxis.svg" 
+    }, {
+        "name": "Pandemic Studios",
+        "status": "reduced",
+        "acquiredBy": "EA",
+        "description": "Developed the first two entries in the Star Wars: Battlefront series, first two entries in the Destroy All Humans! series, and created the Mercenaries Sage series.",
+        "dateFounded": "1988",
+        "dateAcquired": "2007",
+        "dateClosed": "11-17-2009",
+        "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
+        "logo": "/logos/Pandemic_Studios.svg" 
+    }, {
+        "name": "Visceral Games",
+        "status": "closed",
+        "acquiredBy": null,
+        "description": "An EA founded studio that was best known for creating the Dead Space series.",
+        "dateFounded": "1998",
+        "dateAcquired": null,
+        "dateClosed": "10-17-2017",
+        "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
+        "logo": "/logos/Visceral_Games.webp" 
+    }
+]
