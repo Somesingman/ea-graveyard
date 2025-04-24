@@ -2,6 +2,7 @@
     {
         "name": "Westwood Studios",
         "status": "closed",
+        "ownedBy": "EA",
         "acquiredBy": "EA",
         "description": "Famed for creating influential titles in the RTS genre including the Command & Conquer series and entries in the Dune RTS series.",
         "dateFounded": "1985",
@@ -12,6 +13,7 @@
     }, {
         "name": "Maxis Emeryville",
         "status": "revived",
+        "ownedBy": "EA",
         "acquiredBy": "EA",
         "description": "Revolutionized simulation games in the 90s and early 2000s with the SimCity and Sims series.",
         "dateFounded": "1987",
@@ -22,6 +24,7 @@
     }, {
         "name": "Pandemic Studios",
         "status": "reduced",
+        "ownedBy": "EA",
         "acquiredBy": "EA",
         "description": "Developed the first two entries in the Star Wars: Battlefront series, first two entries in the Destroy All Humans! series, and created the Mercenaries Sage series.",
         "dateFounded": "1988",
@@ -32,6 +35,7 @@
     }, {
         "name": "Visceral Games",
         "status": "closed",
+        "ownedBy": "EA",
         "acquiredBy": null,
         "description": "An EA founded studio that was best known for creating the Dead Space series.",
         "dateFounded": "1998",

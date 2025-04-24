@@ -19,31 +19,14 @@ function App() {
     const filteredStudioList = currentFilter === FilterType.ALL ? rawStudioList :
       rawStudioList.filter(studio => {
         if (currentFilter == FilterType.EA) {
-          return studio.acquiredBy == 'EA';
+          return (studio.acquiredBy == 'EA' || studio.ownedBy == 'EA');
         } else if (currentFilter == FilterType.OTHER) {
-          return studio.acquiredBy != 'EA';
+          return (studio.acquiredBy != 'EA' && studio.ownedBy != 'EA');
         }
         return true;
       })
     return filteredStudioList;
   }, [currentFilter, searchTag])
-
-  // useEffect(() => {
-  //   console.log(currentFilter);
-  //   const filteredStudioList = currentFilter === FilterType.ALL ? rawStudioList :
-  //     rawStudioList.filter(studio => {
-  //       if (currentFilter == FilterType.EA) {
-  //         return studio.acquiredBy == 'EA';
-  //       } else if (currentFilter == FilterType.OTHER) {
-  //         return studio.acquiredBy != 'EA';
-  //       }
-  //       return true;
-  //     }) 
-  //   // if (searchTag === '') {
-  //   //   studioList.current = filteredStudioList;
-  //   // }
-  //   studioList.current = filteredStudioList;
-  // })
 
   return (
     <>

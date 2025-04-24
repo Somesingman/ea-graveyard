@@ -7,6 +7,7 @@ export enum Status {
 export interface RawStudioInfo {
     name: string;
     status: string;
+    ownedBy: string | null;     // Field to represent companies that were owned but never acquired
     acquiredBy: string | null;
     description: string;
     dateFounded: string;
@@ -19,6 +20,7 @@ export interface RawStudioInfo {
 export class StudioObj {
     name: string;
     status: Status;
+    ownedBy: String | null;
     acquiredBy: string | null;  // If null, it means studio was never acquired
     description: string;
     dateFounded: Date;
@@ -32,7 +34,8 @@ export class StudioObj {
     constructor(rawData: RawStudioInfo) {
         this.name = rawData.name;
         this.status = rawData.status as Status;
-        this.acquiredBy = rawData.acquiredBy ? rawData.acquiredBy : null;
+        this.ownedBy = rawData.acquiredBy ? rawData.acquiredBy : rawData.ownedBy;
+        this.acquiredBy = rawData.acquiredBy;
         this.description = rawData.description;
         this.dateFounded = new Date(rawData.dateFounded);
         this.dateAcquired = rawData.dateAcquired ? new Date(rawData.dateAcquired) : null;

@@ -39,15 +39,15 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
     const options: Option[]= [
         {
             value: FilterType.ALL,
-            label: `All`,
+            label: `All - ${studios.length}`,
         },
         {
             value: FilterType.EA,
-            label: `EA Studios`,
+            label: `EA Studios - ${studios.filter(studio => (studio.acquiredBy == 'EA' || studio.ownedBy == 'EA')).length}`,
         },
         {
             value: FilterType.OTHER,
-            label: `Other Studios`,
+            label: `Other Studios - ${studios.filter(studio => !(studio.acquiredBy == 'EA' || studio.ownedBy == 'EA')).length}`,
         }
 
     ]
