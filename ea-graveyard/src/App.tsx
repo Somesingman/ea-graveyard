@@ -4,6 +4,7 @@ import './App.css'
 import List from './components/List';
 import Filter from './components/Filter';
 import { StudioObj } from './types/Studio';
+import { SearchBox } from './components/SearchBar';
 import { FilterType } from './types/Filter';
 
 // data
@@ -15,6 +16,8 @@ function App() {
 
   const rawStudioList = rawStudioData.map(studioData => new StudioObj(studioData))
 
+  const allSearchTags = new Set(rawStudioList.map(studio => studio.searchTags).flat());
+
   const studioList: StudioObj[] = useMemo(() => {
     const filteredStudioList = currentFilter === FilterType.ALL ? rawStudioList :
       rawStudioList.filter(studio => {
@@ -25,14 +28,19 @@ function App() {
         }
         return true;
       })
+    if (searchTag !== '') {
+      return rawStudioList.filter(studio => {
+        return studio.searchTags.includes(searchTag);
+      })
+    }
     return filteredStudioList;
   }, [currentFilter, searchTag])
 
   return (
     <>
       <h1 className="text-6xl text-center p-10">EA Graveyard</h1>
-      <div className="p-4 text-center">
-        Search and Filter placeholder
+      <div className="flex flex-col lg:flex-row justify-center p-4 text-center gap-4">
+        <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
         <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
       </div>
       <List studios={studioList} />

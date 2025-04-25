@@ -15,6 +15,7 @@ export interface RawStudioInfo {
     dateClosed: string;
     link: string;
     logo: string;
+    searchTags: string[];
 }
 
 export class StudioObj {
@@ -28,6 +29,7 @@ export class StudioObj {
     dateClosed: Date;
     link: string;
     logo: string;
+    searchTags: string[];
 
     key: string;
 
@@ -42,6 +44,7 @@ export class StudioObj {
         this.dateClosed = new Date(rawData.dateClosed);
         this.link = rawData.link;
         this.logo = rawData.logo;
+        this.searchTags = rawData.searchTags;
 
         this.key = this.name.toLowerCase().replace(/s/g, '');
     }

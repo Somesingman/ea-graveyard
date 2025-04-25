@@ -9,7 +9,15 @@
         "dateAcquired": "1998",
         "dateClosed": "03-31-2003",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
-        "logo": "/logos/Westwood_Studios_1994.svg"
+        "logo": "/logos/Westwood_Studios_1994.svg",
+        "searchTags": [
+            "Westwood Studios",
+            "EA",
+            "Dune",
+            "C&C",
+            "Command & Conquer",
+            "Red Alert"
+        ]
     }, {
         "name": "Maxis Emeryville",
         "status": "revived",
@@ -20,7 +28,14 @@
         "dateAcquired": "1997",
         "dateClosed": "04-05-2015",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
-        "logo": "/logos/Maxis.svg" 
+        "logo": "/logos/Maxis.svg",
+        "searchTags": [
+            "Maxis",
+            "EA",
+            "The Sims",
+            "SimCity",
+            "Spore"
+        ]
     }, {
         "name": "Pandemic Studios",
         "status": "reduced",
@@ -31,7 +46,15 @@
         "dateAcquired": "2007",
         "dateClosed": "11-17-2009",
         "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
-        "logo": "/logos/Pandemic_Studios.svg" 
+        "logo": "/logos/Pandemic_Studios.svg",
+        "searchTags": [
+            "Pandemic Studios",
+            "EA",
+            "Star Wars: Battlefront",
+            "Destroy All Humans!",
+            "Mercenaries Saga",
+            "The Saboteur"
+        ]
     }, {
         "name": "Visceral Games",
         "status": "closed",
@@ -42,6 +65,15 @@
         "dateAcquired": null,
         "dateClosed": "10-17-2017",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
-        "logo": "/logos/Visceral_Games.webp" 
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Visceral Games",
+            "EA",
+            "Tiger Woods PGA Tour",
+            "Dead Space",
+            "Dante's Inferno",
+            "Army of Two",
+            "Battlefield Hardline"
+        ]
     }
 ]

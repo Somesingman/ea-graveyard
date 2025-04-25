@@ -28,7 +28,7 @@ function List({studios}: ListProps) {
                         </div>
                     </div>
                     <div className="flex flex-col items-start">
-                        <h2 key={studio.name} className="text-3xl">
+                        <h2 key={studio.key} className="text-3xl">
                             {studio.name}
                         </h2>
                         {studio.acquiredBy && (

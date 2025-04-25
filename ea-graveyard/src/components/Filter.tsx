@@ -60,7 +60,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
     }, [dropdownRef])
 
     return (
-        <div className="w-full lg:w-md">
+        <div className="w-full lg:w-[215px]">
             <div ref={dropdownButtonRef}>
                 <button type="button" onClick={handleToggle} className="inline-flex items-center w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset capitalize hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden focus:outline-hidden">
                     <div className="w-full text-left">
@@ -89,18 +89,5 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
         </div>
     )
 }
-
-// {options.map((option) => (
-//     <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-//         onClick={() => handleOption(FilterType.ALL)}
-//     >  
-//         {FilterType.ALL}
-//     </a>
-//         // <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-//         //     onClick={() => handleOption(FilterType.EA)}
-//         // >
-//         //     {FilterType.EA}
-//         // </a>
-// )}
 
 export default Filter;
