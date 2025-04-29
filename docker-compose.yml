@@ -1,0 +1,21 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./ea-graveyard:/app:consistent
+    ports:
+      - 8080:8080
+      - 9323:9323
+  
+  playwright:
+    profiles: ["e2e"]
+    image: mcr.microsoft.com/playwright:v1.52.0-noble
+    hostname: playwright
+    ports:
+      - 3000:3000
+    command: >
+      /bin/sh -c 
+      "cd /home/pwuser &&
+      npx -y playwright@1.52.0 run-server --port 3000 --host 0.0.0.0"
