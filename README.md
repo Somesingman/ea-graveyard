@@ -6,4 +6,6 @@ Could be a start to getting into gaming content? From there can create the game 
 
 
 # TODO:
+- Install vitest and playwright for testing
+    - Have to figure out how to run playwright from docker container
 - Create test that verifies all statuses in studio.json are valid statuses
