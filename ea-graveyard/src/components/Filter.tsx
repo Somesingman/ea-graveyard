@@ -60,7 +60,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
     }, [dropdownRef])
 
     return (
-        <div className="w-full lg:w-[215px]">
+        <div id="studioFilter" className="w-full lg:w-[215px]">
             <div ref={dropdownButtonRef}>
                 <button type="button" onClick={handleToggle} className="inline-flex items-center w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset capitalize hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden focus:outline-hidden">
                     <div className="w-full text-left">
@@ -73,7 +73,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
 
                 </button>
             </div>
-            <div className="relative">
+            <div id="studioFilterList" className="relative">
                 {isOpen && (
                     <div ref={dropdownRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
                             {options.map(option => (

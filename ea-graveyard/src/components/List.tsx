@@ -9,7 +9,7 @@ interface ListProps {
 function List({studios}: ListProps) {
 
     return (
-        <ul className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto">
+        <ul id="studioList" className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto">
             {studios.map(studio => (
                 <li key={studio.name} className="flex flex-row gap-4 px-7 pt-6 pb-4 hover:rounded-xl hover:outline hover:outline-black/5 hover:shadow-lg mt-5">
                     <div className="w-[80px]">
