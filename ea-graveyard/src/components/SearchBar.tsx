@@ -58,7 +58,7 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
         <div className="w-full lg:w-[400px]">
             <div ref={searchBoxRef}  className="w-full flex flex-row">
                 <input
-                    id="searchBox"
+                    id="studioSearchBox"
                     placeholder="Search"
                     type="text"
                     value={searchValue}
@@ -67,7 +67,7 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
                     className="w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset"
                 />
             </div>
-            <div className="relative">
+            <div id="studioSearchTagList" className="relative">
                 {showMatchingTags && (
                     <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
                             {shownTags.map(tag => (
