@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Tests
 on:
   push:
     branches: "**"
@@ -9,7 +9,21 @@ on:
 env:
   PLAYWRIGHT_TEST_BASE_URL: http://127.0.0.1:8080
 jobs:
-  test:
+  unit-tests:
+    defaults:
+      run:
+        working-directory: ./ea-graveyard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '23.x'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run unit tests
+        run: npm run test:unit
+  e2e-tests:
     defaults:
       run:
         working-directory: ./ea-graveyard
@@ -23,7 +37,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '23.x'
-    - run: ls
     - name: Install dependencies
       run: npm ci
     - name: Run Playwright tests

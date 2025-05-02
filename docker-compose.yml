@@ -7,6 +7,7 @@ services:
       - ./ea-graveyard:/app:consistent
     ports:
       - 8080:8080
+      - 4173:4173
       - 9323:9323
   
   playwright:

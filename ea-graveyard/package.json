@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0 --port 8080",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite --host 0.0.0.0 preview",
     "test:unit": "vitest run",
     "test:e2e": "PW_TEST_CONNECT_WS_ENDPOINT=ws://playwright:3000/ npx playwright test"
   },
