@@ -7,7 +7,7 @@ interface ListProps {
 }
 
 function List({studios}: ListProps) {
-
+    
     return (
         <ul id="studioList" className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto">
             {studios.map(studio => (
