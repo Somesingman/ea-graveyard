@@ -9,7 +9,7 @@
         "dateAcquired": "1998",
         "dateClosed": "2003-03-31",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
-        "logo": "/logos/Westwood_Studios_1994.svg",
+        "logo": "./logos/Westwood_Studios_1994.svg",
         "searchTags": [
             "Westwood Studios",
             "EA",
@@ -28,7 +28,7 @@
         "dateAcquired": "1997",
         "dateClosed": "2015-04-05",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
-        "logo": "/logos/Maxis.svg",
+        "logo": "./logos/Maxis.svg",
         "searchTags": [
             "Maxis",
             "EA",
@@ -46,7 +46,7 @@
         "dateAcquired": "2007",
         "dateClosed": "2009-11-17",
         "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
-        "logo": "/logos/Pandemic_Studios.svg",
+        "logo": "./logos/Pandemic_Studios.svg",
         "searchTags": [
             "Pandemic Studios",
             "EA",
@@ -65,7 +65,7 @@
         "dateAcquired": null,
         "dateClosed": "2017-10-17",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Visceral Games",
             "EA",

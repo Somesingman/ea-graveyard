@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/ea-graveyard/',
   server: {
     allowedHosts: ['website'],
     watch: {
