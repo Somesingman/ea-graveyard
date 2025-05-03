@@ -7,7 +7,7 @@
         "description": "Famed for creating influential titles in the RTS genre including the Command & Conquer series and entries in the Dune RTS series.",
         "dateFounded": "1985",
         "dateAcquired": "1998",
-        "dateClosed": "03-31-2003",
+        "dateClosed": "2003-03-31",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
         "logo": "/logos/Westwood_Studios_1994.svg",
         "searchTags": [
@@ -20,13 +20,13 @@
         ]
     }, {
         "name": "Maxis Emeryville",
-        "status": "revived",
+        "status": "closed",
         "ownedBy": "EA",
         "acquiredBy": "EA",
         "description": "Revolutionized simulation games in the 90s and early 2000s with the SimCity and Sims series.",
         "dateFounded": "1987",
         "dateAcquired": "1997",
-        "dateClosed": "04-05-2015",
+        "dateClosed": "2015-04-05",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
         "logo": "/logos/Maxis.svg",
         "searchTags": [
@@ -38,13 +38,13 @@
         ]
     }, {
         "name": "Pandemic Studios",
-        "status": "reduced",
+        "status": "closed",
         "ownedBy": "EA",
         "acquiredBy": "EA",
         "description": "Developed the first two entries in the Star Wars: Battlefront series, first two entries in the Destroy All Humans! series, and created the Mercenaries Sage series.",
         "dateFounded": "1988",
         "dateAcquired": "2007",
-        "dateClosed": "11-17-2009",
+        "dateClosed": "2009-11-17",
         "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
         "logo": "/logos/Pandemic_Studios.svg",
         "searchTags": [
@@ -63,17 +63,189 @@
         "description": "An EA founded studio that was best known for creating the Dead Space series.",
         "dateFounded": "1998",
         "dateAcquired": null,
-        "dateClosed": "10-17-2017",
+        "dateClosed": "2017-10-17",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
         "logo": "/logos/Visceral_Games.webp",
         "searchTags": [
             "Visceral Games",
             "EA",
+            "EA Redwood Shores",
             "Tiger Woods PGA Tour",
             "Dead Space",
             "Dante's Inferno",
             "Army of Two",
             "Battlefield Hardline"
+        ]
+    }, {
+        "name": "NuFX",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "Developers of entries in the NBA Street, NBA Live, NCAA March Madness and FIFA Soccer series. They were merged into EA Chicago in the same year they were acquired and then shut down about three years later.",
+        "dateFounded": "1990",
+        "dateAcquired": "2004-02-13",
+        "dateClosed": "2007-11-06",
+        "link": "https://www.gamespot.com/articles/ea-chicago-closing/1100-6182347/",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "NuFX",
+            "EA Chicago",
+            "EA",
+            "NBA Street",
+            "NBA Live",
+            "NCAA March Madness",
+            "NCAA Basketball",
+            "FIFA Soccer"
+        ]
+    }, {
+        "name": "Playfish",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "Development studio that was focused on web games, most of which were available on Facebook. Was known for Resaurant City, Pet Society, and The Sims Social.",
+        "dateFounded": "2007",
+        "dateAcquired": "2009-11-09",
+        "dateClosed": "2013-06-14",
+        "link": "https://www.gamesindustry.biz/ea-shutting-down-playfish-games",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Playfish",
+            "EA",
+            "Restaurant City",
+            "Pet Society",
+            "The Sims Social"
+        ]
+    }, {
+        "name": "Black Box Games",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "A Canadian based developer that were most known for their work their entires in the Need for Speed series and cerating the Skate series.",
+        "dateFounded": "1998",
+        "dateAcquired": "2002-06-11",
+        "dateClosed": "2013-04-13",
+        "link": "https://financialpost.com/technology/gaming/ea-closing-vancouver-studios-popcap-and-quicklime-in-latest-round-of-layoffs-report",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Black Box Games",
+            "EA",
+            "Need for Speed",
+            "Skate"
+        ]
+    }, {
+        "name": "Phenomic",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "A RTS strategy game developer headqurtered in Germany known for the SpellForce and Battleforge. Before closure, they developed browser games Lord of Ultima and Command & Conquer: Tiberium Alliances.",
+        "dateFounded": "1997",
+        "dateAcquired": "2006-08-22",
+        "dateClosed": "2013-07-12",
+        "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Phenomic",
+            "EA",
+            "SpellForce",
+            "Battleforge",
+            "Ultima",
+            "Command & Conquer",
+            "Tiberium Alliances"
+        ]
+    }, {
+        "name": "DreamWorks Interactive / Danger Close",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "Game studio most famous for creating the Medal of Honor series. Rebranded as EA LA, they picked up the Command & Conquer series as well as creating the Lord of the Ring: The Battle for Middle-earth RTS series.",
+        "dateFounded": "1995",
+        "dateAcquired": "2000-02-24",
+        "dateClosed": "2013-01-30",
+        "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "DreamWorks Interactive",
+            "EA",
+            "EA Los Angeles",
+            "Danger Close",
+            "Medal of Honor",
+            "Command & Conquer",
+            "Lord of the Rings: The Battle for Middle-earth"
+        ]
+    }, {
+        "name": "Origin Systems",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "Texas based developer famed for groundbreaking work in RPG, flight sim, FPS, and MMORPG genres. Their work includes the Ultima, Wing Commander, and System Shock series. They released one of the earliest MMORPGs, Ultima Online.",
+        "dateFounded": "1983",
+        "dateAcquired": "1992-09-25",
+        "dateClosed": "2004-03-01",
+        "link": "https://www.gamesindustry.biz/ea-confirms-closure-of-origin-systems",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Origin Systems",
+            "EA",
+            "Ultima",
+            "Ultima Online",
+            "Wing Commander",
+            "System Shock"
+        ]
+    }, {
+        "name": "Bullfrog Productions",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "British based game developer known at the time for their innovative and creative games such as the Theme Park, Dungeon Keeper, and Syndicate series.",
+        "dateFounded": "1987",
+        "dateAcquired": "1995-01-06",
+        "dateClosed": "2001",
+        "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Bullfrog Productions",
+            "EA",
+            "Theme Park",
+            "Theme Hospital",
+            "Syndicate",
+            "Dungeon Keeper"
+        ]
+    }, {
+        "name": "Mythic Entertainment",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "American game developer that focused on MMO games and most known for developing Dark Age of Camelot.",
+        "dateFounded": "1995",
+        "dateAcquired": "1995-01-06",
+        "dateClosed": "2001",
+        "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Mythic Entertainment",
+            "EA",
+            "Aliens Online",
+            "Dark Age of Camelot",
+            "Warhammer Online: Age of Reckoning"
+        ]
+    }, {
+        "name": "Headgate Studios",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "An American developer that created entries in Tiger Woods PGA Tour. Rebranded as EA Salt Lake, they refocused on developing wii games before being transferred to Maxis division creating The Sims 3 expansion packs, before being taken out back and shut down.",
+        "dateFounded": "1995",
+        "dateAcquired": "1995-01-06",
+        "dateClosed": "2001",
+        "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
+        "logo": "/logos/Visceral_Games.webp",
+        "searchTags": [
+            "Headgate Studios",
+            "EA",
+            "EA Salt Lake",
+            "Tiger Woods PGA Tour",
+            "Littled Pet Shop",
+            "The Sims 3"
         ]
     }
 ]
