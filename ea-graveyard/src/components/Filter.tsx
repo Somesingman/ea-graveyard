@@ -39,7 +39,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
     const options: Option[]= [
         {
             value: FilterType.ALL,
-            label: `All - ${studios.length}`,
+            label: `All Studios - ${studios.length}`,
         },
         {
             value: FilterType.EA,
@@ -75,7 +75,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
             </div>
             <div id="studioFilterList" className="relative">
                 {isOpen && (
-                    <div ref={dropdownRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+                    <div ref={dropdownRef} className="absolute w-full lg:w-[215px] mt-2 py-1 origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
                             {options.map(option => (
                                 <a key={option.value} href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden" role="menuitem"
                                     onClick={() => handleOption(option.value)}

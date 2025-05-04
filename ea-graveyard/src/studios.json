@@ -86,7 +86,7 @@
         "dateAcquired": "2004-02-13",
         "dateClosed": "2007-11-06",
         "link": "https://www.gamespot.com/articles/ea-chicago-closing/1100-6182347/",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "NuFX",
             "EA Chicago",
@@ -107,7 +107,7 @@
         "dateAcquired": "2009-11-09",
         "dateClosed": "2013-06-14",
         "link": "https://www.gamesindustry.biz/ea-shutting-down-playfish-games",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Playfish",
             "EA",
@@ -125,7 +125,7 @@
         "dateAcquired": "2002-06-11",
         "dateClosed": "2013-04-13",
         "link": "https://financialpost.com/technology/gaming/ea-closing-vancouver-studios-popcap-and-quicklime-in-latest-round-of-layoffs-report",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Black Box Games",
             "EA",
@@ -142,7 +142,7 @@
         "dateAcquired": "2006-08-22",
         "dateClosed": "2013-07-12",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Phenomic",
             "EA",
@@ -162,7 +162,7 @@
         "dateAcquired": "2000-02-24",
         "dateClosed": "2013-01-30",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "DreamWorks Interactive",
             "EA",
@@ -182,7 +182,7 @@
         "dateAcquired": "1992-09-25",
         "dateClosed": "2004-03-01",
         "link": "https://www.gamesindustry.biz/ea-confirms-closure-of-origin-systems",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Origin Systems",
             "EA",
@@ -201,7 +201,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Bullfrog Productions",
             "EA",
@@ -220,7 +220,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Mythic Entertainment",
             "EA",
@@ -238,7 +238,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
-        "logo": "/logos/Visceral_Games.webp",
+        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Headgate Studios",
             "EA",
@@ -246,6 +246,24 @@
             "Tiger Woods PGA Tour",
             "Littled Pet Shop",
             "The Sims 3"
+        ]
+    }, {
+        "name": "Respawn Entertainment",
+        "status": "declining",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "An American developer founded by ex-cofounders of Infinity Ward, known for released Titanfall, Apex Legends, and the Star Wars Jedi series. Has recently suffered canceled games and layoffs.",
+        "dateFounded": "2010-04-12",
+        "dateAcquired": "2017-12-01",
+        "dateClosed": null,
+        "link": "https://www.ign.com/articles/apex-legends-and-star-wars-jedi-dev-respawn-cancels-another-incubation-project-around-100-employees-impacted",
+        "logo": "./logos/Visceral_Games.webp",
+        "searchTags": [
+            "Respawn Entertinament",
+            "EA",
+            "Apex Legends",
+            "Titanfall",
+            "Star Wars Jedi"
         ]
     }
 ]

@@ -13,17 +13,22 @@ function List({studios}: ListProps) {
         <ul id="studioList" className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto">
             {studios.map(studio => (
                 <li key={studio.name} className="flex flex-row gap-4 px-7 pt-6 pb-4 hover:rounded-xl hover:outline hover:outline-black/5 hover:shadow-lg mt-5">
-                    <div className="w-[80px]">
+                    <div>
                         {/* <img className="aspect-square max-w-[80px]" src={studio.logo}/> */}
-                        <XCircleIcon className="max-w-[80px]" />
+                        <XCircleIcon className="w-[80px]" />
                         <div className="flex justify-around text-sm my-2">
                             <time dateTime={studio.dateFounded.toString()} title={`${studio.dateFounded.toString()}`}>
                                 {studio.dateFounded.getFullYear()}
                             </time>
                             {` - `}
-                            <time dateTime={studio.dateClosed.toString()} title={`${studio.dateClosed.toString()}`}>
-                                {studio.dateClosed.getFullYear()}
-                            </time>
+                            { studio.dateClosed ? (
+                                    <time dateTime={studio.dateClosed.toString()} title={`${studio.dateClosed.toString()}`}>
+                                        {studio.dateClosed.getFullYear()}
+                                    </time>
+                                ) : (
+                                    <span className="w-[30.2px]" />
+                                ) 
+                            }
                         </div>
                         <div className="text-center mt-2">
                             <StatusBadge status={studio.status} />

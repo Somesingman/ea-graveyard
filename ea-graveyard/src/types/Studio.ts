@@ -1,7 +1,7 @@
 export enum Status {
     CLOSED = 'closed',
     REVIVED = 'revived',
-    REDUCED = 'reduced',
+    DECLINING = 'declining',
 }
 
 export interface RawStudioInfo {
@@ -12,7 +12,7 @@ export interface RawStudioInfo {
     description: string;
     dateFounded: string;
     dateAcquired: string | null;
-    dateClosed: string;
+    dateClosed: string | null;
     link: string;
     logo: string;
     searchTags: string[];
@@ -26,7 +26,7 @@ export class StudioObj {
     description: string;
     dateFounded: Date;
     dateAcquired: Date | null;  // If null, it means studio was never acquired
-    dateClosed: Date;
+    dateClosed: Date | null;
     link: string;
     logo: string;
     searchTags: string[];
@@ -41,7 +41,7 @@ export class StudioObj {
         this.description = rawData.description;
         this.dateFounded = new Date(rawData.dateFounded);
         this.dateAcquired = rawData.dateAcquired ? new Date(rawData.dateAcquired) : null;
-        this.dateClosed = new Date(rawData.dateClosed);
+        this.dateClosed = rawData.dateClosed ? new Date(rawData.dateClosed) : null;
         this.link = rawData.link;
         this.logo = rawData.logo;
         this.searchTags = rawData.searchTags;
