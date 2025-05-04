@@ -75,5 +75,9 @@ describe("studios.json", () => {
                 return;
             });
         });
+
+        test('sabotage', () => {
+            expect(true).toBe(false);
+        });
     });
 });
