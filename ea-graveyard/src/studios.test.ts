@@ -14,7 +14,7 @@ describe("studios.json", () => {
                 expect(studio.description).not.toBeNull();
                 expect(studio.dateFounded).not.toBeNull();
                 expect(studio.dateAcquired).not.toBeUndefined();
-                expect(studio.dateClosed).not.toBeNull();
+                expect(studio.dateClosed).not.toBeUndefined();
                 expect(studio.link).not.toBeNull();
                 expect(studio.logo).not.toBeNull();
                 expect(studio.searchTags.length).toBeGreaterThan(0);
@@ -40,11 +40,13 @@ describe("studios.json", () => {
                 try {
                     const dateFounded = new Date(studio.dateFounded);
                     const dateAcquired = studio.dateAcquired ? new Date(studio.dateAcquired) : null;
-                    const dateClosed = new Date(studio.dateClosed);
+                    const dateClosed = studio.dateClosed ? new Date(studio.dateClosed) : null;
                     
                     // Also check that dates are not in the future
                     expect((dateFounded.getFullYear()) <= thisYear);
-                    expect((dateClosed.getFullYear()) <= thisYear);
+                    if (dateClosed) {
+                        expect((dateClosed.getFullYear()) <= thisYear);
+                    }
                     if (dateAcquired) {
                         expect((dateAcquired.getFullYear()) <= thisYear);
                     }
@@ -56,18 +58,21 @@ describe("studios.json", () => {
 
         test('dateClosed is after dateFounded and dateAcquired (when applicable)', () => {
             rawStudioData.forEach((studio: RawStudioInfo) => {
-                try {
-                    const dateFounded = new Date(studio.dateFounded);
-                    const dateAcquired = studio.dateAcquired ? new Date(studio.dateAcquired) : null;
-                    const dateClosed = new Date(studio.dateClosed);
-                    
-                    expect(dateFounded < dateClosed);
-                    if (dateAcquired) {
-                        expect(dateAcquired < dateClosed);
+                if (studio.dateClosed) {
+                    try {
+                        const dateFounded = new Date(studio.dateFounded);
+                        const dateAcquired = studio.dateAcquired ? new Date(studio.dateAcquired) : null;
+                        const dateClosed = new Date(studio.dateClosed);
+                        
+                        expect(dateFounded < dateClosed);
+                        if (dateAcquired) {
+                            expect(dateAcquired < dateClosed);
+                        }
+                    } catch (e) {
+                        throw new Error(`${studio.name} was either founded or acquired before they were closed!`);
                     }
-                } catch (e) {
-                    throw new Error(`${studio.name} was either founded or acquired before they were closed!`);
                 }
+                return;
             });
         });
     });
