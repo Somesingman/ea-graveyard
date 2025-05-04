@@ -14,7 +14,7 @@ export interface RawStudioInfo {
     dateAcquired: string | null;
     dateClosed: string | null;
     link: string;
-    logo: string;
+    logo: string;               // Not used currently, potentially used in future updates
     searchTags: string[];
 }
 
