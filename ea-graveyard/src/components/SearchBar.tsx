@@ -12,74 +12,74 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
     const searchBoxRef = useRef<HTMLDivElement>(null);
 
     const shownTags = useMemo(() => {
-        return Array.from(availableSearchTags).filter(tag => {
-            return tag.toLowerCase().includes(searchValue.toLowerCase());
-        });
-    }, [searchValue, setSearchTag])
+      return Array.from(availableSearchTags).filter(tag => {
+        return tag.toLowerCase().includes(searchValue.toLowerCase());
+      });
+    }, [availableSearchTags, searchValue])
 
     const handleTagSelect = (tag: string) => {
-        setSearchValue(tag);
-        setSearchTag(tag);
-        setHasMatchingTags(false);
+      setSearchValue(tag);
+      setSearchTag(tag);
+      setHasMatchingTags(false);
     }
 
     const handleSearchBarFocus = () => {
-        setSearchTag('');
-        setSearchValue('');
+      setSearchTag('');
+      setSearchValue('');
     }
 
     const handleSearchTextChange = (searchBoxValue: string) => {
-        setSearchValue(searchBoxValue);
-        if (shownTags) {
-            setHasMatchingTags(true);
-            setSearchTag('');
-        }
+      setSearchValue(searchBoxValue);
+      if (shownTags) {
+        setHasMatchingTags(true);
+        setSearchTag('');
+      }
     }
 
     const handleOutsideClick = (event: MouseEvent) => {
-        if (tagListRef.current && !tagListRef.current.contains(event.target as Node)
-            && !searchBoxRef.current?.contains(event.target as Node)
-        ) {
-            setSearchTag('');
-            setSearchValue('');
-        }
+      if (tagListRef.current && !tagListRef.current.contains(event.target as Node)
+        && !searchBoxRef.current?.contains(event.target as Node)
+      ) {
+        setSearchTag('');
+        setSearchValue('');
+      }
     }
 
     useEffect(() => {
-        document.addEventListener('mousedown', handleOutsideClick);
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        }
+      document.addEventListener('mousedown', handleOutsideClick);
+      return () => {
+        document.removeEventListener('mousedown', handleOutsideClick);
+      }
     }, [tagListRef])
 
     const showMatchingTags = (searchValue !== '' && shownTags.length > 0 && hasMatchingTags);
 
     return (
-        <div className="w-full lg:w-[400px]">
-            <div ref={searchBoxRef}  className="w-full flex flex-row">
-                <input
-                    id="studioSearchBox"
-                    placeholder="Search"
-                    type="text"
-                    value={searchValue}
-                    onFocus={() => handleSearchBarFocus()}
-                    onChange={(e: React.FormEvent<HTMLInputElement>) => handleSearchTextChange(e.currentTarget.value)}
-                    className="w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset"
-                />
-            </div>
-            <div id="studioSearchTagList" className="relative">
-                {showMatchingTags && (
-                    <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
-                            {shownTags.map(tag => (
-                                <a key={tag} href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden" role="menuitem"
-                                    onClick={() => handleTagSelect(tag)}
-                                >  
-                                    {tag}
-                                </a>
-                            ))}
-                    </div>
-                )}
-            </div>
+      <div className="w-full lg:w-[400px]">
+        <div ref={searchBoxRef}  className="w-full flex flex-row">
+          <input
+            id="studioSearchBox"
+            placeholder="Search"
+            type="text"
+            value={searchValue}
+            onFocus={() => handleSearchBarFocus()}
+            onChange={(e: React.FormEvent<HTMLInputElement>) => handleSearchTextChange(e.currentTarget.value)}
+            className="w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset"
+          />
         </div>
+        <div id="studioSearchTagList" className="relative">
+          {showMatchingTags && (
+            <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+                {shownTags.map(tag => (
+                  <a key={tag} href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden" role="menuitem"
+                    onClick={() => handleTagSelect(tag)}
+                  >  
+                    {tag}
+                  </a>
+                ))}
+            </div>
+          )}
+        </div>
+      </div>
     )
 }

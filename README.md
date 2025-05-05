@@ -43,7 +43,7 @@ The status can only be either `closed`, `declining`, or `revived` as a string.
 
 ### Link
 
-The link should be to a resource that announces the closure of the studio along with additional informationa about the game studio and the games it is known for developing. Links to Wikipedia or a new organization is preferable. **Please do not use links from the studio or parent company itself, it is common for these links to go dead after the studio's closure.**
+The link should be to a resource that announces the closure of the studio along with additional informationa about the game studio and the games it is known for developing. Links to a news organization is preferable. **Please do not use links from the studio or parent company itself, it is common for these links to go dead after the studio's closure.**
 
 ### Search Tags
 
@@ -51,7 +51,7 @@ Include the name of the game studio and parent company. Instead of listing indiv
 
 ## Any Issues? Suggestions?
 
-If you have an issues or suggestions, please [open a new issue](https://github.com/Somesingman/ea-graveyard/issues/new) describing the improvement or feature you would like to see. Please label the issue as a `suggestion`.
+If you have an issues or suggestions, please [open a new issue](https://github.com/Somesingman/ea-graveyard/issues/new) describing the improvement or feature you would like to see.
 
 # TODO:
 - Create github action that checks links are still valid

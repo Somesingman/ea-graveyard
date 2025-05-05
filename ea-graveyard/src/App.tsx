@@ -8,9 +8,11 @@ import { StudioObj } from './types/Studio';
 import { SearchBox } from './components/SearchBar';
 import { FilterType } from './types/Filter';
 import { SortType } from './types/Sort';
+import { Footer } from './components/Footer';
 
 // data
 import rawStudioData from './studios.json';
+
 
 
 function App() {
@@ -27,15 +29,15 @@ function App() {
     switch (currentSort) {
       case SortType.DateClosed:
         studioList.sort((a, b) => {
-          let dateA = a.dateClosed ? a.dateClosed : farFuture
-          let dateB = b.dateClosed ? b.dateClosed : farFuture
+          const dateA = a.dateClosed ? a.dateClosed : farFuture
+          const dateB = b.dateClosed ? b.dateClosed : farFuture
           return dateA.getTime() - dateB.getTime()
         });
         break;
       case SortType.ReverseDateClosed:
         studioList.sort((a, b) => {
-          let dateA = a.dateClosed ? a.dateClosed : farFuture
-          let dateB = b.dateClosed ? b.dateClosed : farFuture
+          const dateA = a.dateClosed ? a.dateClosed : farFuture
+          const dateB = b.dateClosed ? b.dateClosed : farFuture
           return dateB.getTime() - dateA.getTime()
         });
         break;
@@ -47,15 +49,15 @@ function App() {
         break;
       case SortType.DateAcquired:
         studioList.sort((a, b) => {
-          let dateA = a.dateAcquired ? a.dateAcquired : farFuture
-          let dateB = b.dateAcquired ? b.dateAcquired : farFuture
+          const dateA = a.dateAcquired ? a.dateAcquired : farFuture
+          const dateB = b.dateAcquired ? b.dateAcquired : farFuture
           return dateA.getTime() - dateB.getTime()
         });
         break;
       case SortType.ReverseDateAcquired:
         studioList.sort((a, b) => {
-          let dateA = a.dateAcquired ? a.dateAcquired : farFuture
-          let dateB = b.dateAcquired ? b.dateAcquired : farFuture
+          const dateA = a.dateAcquired ? a.dateAcquired : farFuture
+          const dateB = b.dateAcquired ? b.dateAcquired : farFuture
           return dateB.getTime() - dateA.getTime()
         });
         break;
@@ -79,17 +81,18 @@ function App() {
       })
     }
     return sortStudios(processedStudioList);
-  }, [currentFilter, currentSort, searchTag])
+  }, [currentFilter, currentSort, searchTag, rawStudioList])
 
   return (
     <>
       <h1 className="text-6xl text-center p-10">EA Graveyard</h1>
-      <div className="flex flex-col lg:flex-row justify-center p-4 text-center gap-4">
+      <div className="flex flex-col lg:flex-row justify-center py-4 px-10 text-center gap-4">
         <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
         <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
         <Sort currentSort={currentSort} sortHandler={setSort}/>
       </div>
       <List studios={studioList} />
+      <Footer />
     </>
   )
 }
