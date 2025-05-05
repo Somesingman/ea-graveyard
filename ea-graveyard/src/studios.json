@@ -120,7 +120,7 @@
         "status": "closed",
         "ownedBy": "EA",
         "acquiredBy": "EA",
-        "description": "A Canadian based developer that were most known for their work their entires in the Need for Speed series and cerating the Skate series.",
+        "description": "A Canadian based developer that were most known for their work their entires in the Need for Speed series and cerating the Skate series.The studio was renamed to Quicklime Games before being shut down.",
         "dateFounded": "1998",
         "dateAcquired": "2002-06-11",
         "dateClosed": "2013-04-13",
@@ -259,11 +259,68 @@
         "link": "https://www.ign.com/articles/apex-legends-and-star-wars-jedi-dev-respawn-cancels-another-incubation-project-around-100-employees-impacted",
         "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
-            "Respawn Entertinament",
+            "Respawn Entertainment",
             "EA",
             "Apex Legends",
             "Titanfall",
             "Star Wars Jedi"
+        ]
+    }, {
+        "name": "Hypnotix",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "US developer known for Deer Avenger and Outlaw sports games. Was folded into EA Tiburon upon being acquired.",
+        "dateFounded": "1993",
+        "dateAcquired": "2005-07-27",
+        "dateClosed": "2005-07-27",
+        "link": "https://www.ign.com/articles/2005/07/27/ea-grabs-hypnotix-for-arena-football",
+        "logo": "./logos/Visceral_Games.webp",
+        "searchTags": [
+            "Hypnotix",
+            "EA",
+            "Outlaw Golf",
+            "Outlaw Volleyball",
+            "Deer Avenger"
+        ]
+    }, {
+        "name": "Industrial Toys",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "US studio founded by Halo co-creator and Bungie co-founder Alex Seropian to create mobile games. Developed the Midnight Star series. Was working on the canceled Battlefield Mobile game when shut down.",
+        "dateFounded": "2012-01",
+        "dateAcquired": "2018-07-09",
+        "dateClosed": "2023-01-31",
+        "link": "https://www.eurogamer.net/ea-cancels-development-of-apex-legends-mobile-battlefield-mobile",
+        "logo": "./logos/Visceral_Games.webp",
+        "searchTags": [
+            "Industrial Toys",
+            "EA",
+            "Midnight Star",
+            "Battlefield Mobile"
+        ]
+    }, {
+        "name": "Bioware",
+        "status": "declining",
+        "ownedBy": "EA",
+        "acquiredBy": "EA",
+        "description": "Canadian game developer that specializes in RPGs. Known for it's successful licensed games such as Baldur's Gate, Neverwinter Nights, and Star Wars: Knights of the Old Republic as well original games: Jade Empire, Mass Effect series, and Dragon Age series.",
+        "dateFounded": "1995",
+        "dateAcquired": "2007-10-11",
+        "dateClosed": null,
+        "link": "https://www.theverge.com/news/604549/bioware-layoffs-shifts-mass-effect",
+        "logo": "./logos/Visceral_Games.webp",
+        "searchTags": [
+            "Bioware",
+            "EA",
+            "Baldur's Gate",
+            "Neverwinter Nights",
+            "Star Wars: Knights of the Old Republic",
+            "Jade Empire",
+            "Mass Effect",
+            "Dragon Age",
+            "Star Wars: The Old Republic"
         ]
     }
 ]
