@@ -4,6 +4,8 @@ Project similar to www.killedbygoogle.com or the google graveyard site.
 
 A graveyard for video game developers that EA has killed, along with other beloved game studios that we've lost along the way.
 
+# 🚧 Still Under Construction🚧
+
 # Contributing
 
 To add a game developer studio, gather the following information:

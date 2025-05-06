@@ -85,13 +85,16 @@ function App() {
 
   return (
     <>
-      <h1 className="text-6xl text-center p-10">EA Graveyard</h1>
-      <div className="flex flex-col lg:flex-row justify-center py-4 px-10 text-center gap-4">
-        <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
-        <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
-        <Sort currentSort={currentSort} sortHandler={setSort}/>
+      <div className="max-w-[1600px] mx-auto">
+        <h1 className="text-6xl text-center p-10">EA Graveyard</h1>
+        <h2 className="text-3xl text-center">🚧Still Under Construction🚧</h2>
+        <div className="flex flex-col lg:flex-row justify-center py-4 px-10 text-center gap-4">
+          <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
+          <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
+          <Sort currentSort={currentSort} sortHandler={setSort}/>
+        </div>
+        <List studios={studioList} />
       </div>
-      <List studios={studioList} />
       <Footer />
     </>
   )
