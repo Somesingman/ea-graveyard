@@ -1,8 +1,13 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "ea-graveyard",
+  "version": "0.1.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:somesingman/ea-graveyard.git"
+  },
+  "author": "Somesingman",
+  "license": "MIT",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 8080",
     "build": "tsc -b && vite build",
