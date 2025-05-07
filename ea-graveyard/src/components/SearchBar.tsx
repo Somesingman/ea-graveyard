@@ -64,14 +64,14 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
             value={searchValue}
             onFocus={() => handleSearchBarFocus()}
             onChange={(e: React.FormEvent<HTMLInputElement>) => handleSearchTextChange(e.currentTarget.value)}
-            className="w-full rounded-md bg-white px-3 py-2 text-lg text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset"
+            className="w-full rounded-md bg-white dark:bg-gray-700 px-3 py-2 text-lg text-gray-900 dark:placeholder-gray-400 dark:text-white shadow-xs dark:border-gray-600"
           />
         </div>
         <div id="studioSearchTagList" className="relative">
           {showMatchingTags && (
-            <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white shadow-lg ring-1 ring-gray-300 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+            <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
                 {shownTags.map(tag => (
-                  <a key={tag} href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900 hover:outline-hidden" role="menuitem"
+                  <a key={tag} href="#" className="block px-4 py-2 text-lg text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-gray-900 hover:outline-hidden" role="menuitem"
                     onClick={() => handleTagSelect(tag)}
                   >  
                     {tag}

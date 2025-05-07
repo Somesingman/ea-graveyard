@@ -5,15 +5,15 @@ interface BadgeProps {
 }
 
 const ColorClassMap: { [key in Status]?: string} = {
-  [Status.CLOSED]: "bg-red-100 text-red-600",
-  [Status.REVIVED]: "bg-blue-100 text-blue-600",
-  [Status.DECLINING]: "bg-yellow-100 text-yellow-600"
+  [Status.CLOSED]: "bg-red-100 text-red-600 dark:bg-gray-700 dark:text-red-400 border border-red-400",
+  [Status.REVIVED]: "bg-blue-100 text-blue-600 dark:bg-gray-700 dark:text-blue-400 border border-blue-400",
+  [Status.DECLINING]: "bg-yellow-100 text-yellow-600 dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400"
 }
 
 const DotClassMap: { [key in Status]?: string} = {
-  [Status.CLOSED]: "bg-red-500 dark:bg-red-500",
-  [Status.REVIVED]: "bg-blue-500 dark:bg-blue-500",
-  [Status.DECLINING]: "bg-yellow-500 dark:bg-yellow-500"
+  [Status.CLOSED]: "bg-red-500",
+  [Status.REVIVED]: "bg-blue-500",
+  [Status.DECLINING]: "bg-yellow-500"
 }
 
 export function StatusBadge({status}: BadgeProps) {
@@ -34,7 +34,7 @@ interface AcquiredBadgeProps {
 export function AcquiredBadge({company, acquiredDate}: AcquiredBadgeProps) {
 
   return (
-    <span className={"rounded-md px-2 py-1 text-xs font-medium bg-gray-200 ring-1 ring-gray-500/10 ring-inset my-1"}>
+    <span className={"rounded-md px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 dark:text-gray-300 ring-2 ring-gray-500 ring-inset my-"}>
       Acquired by {company} in {acquiredDate.getFullYear()}
     </span>
   )

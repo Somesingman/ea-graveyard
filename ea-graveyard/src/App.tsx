@@ -13,12 +13,11 @@ import { Footer } from './components/Footer';
 // data
 import rawStudioData from './studios.json';
 
-
-
 function App() {
   const [currentFilter, setFilter] = useState<FilterType>(FilterType.ALL)
   const [currentSort, setSort] = useState<SortType>(SortType.ReverseDateClosed)
   const [searchTag, setSearchTag] = useState('');
+  const [nightModeOn, setNightMode] = useState(localStorage.getItem("nightMode") === 'dark' || !('nightMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   const rawStudioList = rawStudioData.map(studioData => new StudioObj(studioData))
 
@@ -84,10 +83,10 @@ function App() {
   }, [currentFilter, currentSort, searchTag, rawStudioList])
 
   return (
-    <>
-      <div className="max-w-[1600px] mx-auto">
-        <h1 className="text-6xl text-center p-10">EA Graveyard</h1>
-        <h2 className="text-3xl text-center">🚧Still Under Construction🚧</h2>
+    <div className={`${nightModeOn ? "light" : "dark"} dark:bg-gray-800`}>
+      <div className="max-w-[1600px] pb-10 mx-auto">
+        <h1 className="text-6xl text-center p-10 dark:text-white">EA Graveyard</h1>
+        <h2 className="text-3xl text-center dark:text-white">🚧Still Under Construction🚧</h2>
         <div className="flex flex-col lg:flex-row justify-center py-4 px-10 text-center gap-4">
           <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
           <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
@@ -96,7 +95,7 @@ function App() {
         <List studios={studioList} />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -2,8 +2,8 @@
 export function Footer() {
     
   return (
-    <footer className="bg-red-400 mt-10 h-[510px] w-full text-slate-50">
-      <div className="flex flex-col py-5 w-[650px] self-center text-center mx-auto py-10 gap-y-5">
+    <footer className="bg-red-400 dark:bg-red-900 h-[510px] w-full text-white">
+      <div className="flex flex-col w-[650px] self-center text-center mx-auto py-10 gap-y-5">
         <h1 className="text-6xl">EA Graveyard</h1>
         <div className="flex flex-col text-lg gap-y-10">
           <p>
