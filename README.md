@@ -1,4 +1,4 @@
-# EA Graveyard
+# EA Graveyard [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
 Project similar to www.killedbygoogle.com or the google graveyard site.
 
