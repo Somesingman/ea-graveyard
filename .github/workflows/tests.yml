@@ -2,12 +2,14 @@ name: Tests
 on:
   push:
     branches: "**"
-  pull_request:
-    branches: "**"
   pull_request_target:
     branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
 env:
   PLAYWRIGHT_TEST_BASE_URL: http://127.0.0.1:8080
+
 jobs:
   unit-tests:
     defaults:

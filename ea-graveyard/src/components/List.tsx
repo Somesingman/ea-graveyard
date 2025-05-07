@@ -1,6 +1,6 @@
-import { StudioObj } from "../types/Studio"
+import { Status, StudioObj } from "../types/Studio"
 import { NewspaperIcon } from "@heroicons/react/24/outline";
-import { XCircleIcon } from "@heroicons/react/24/outline";
+import { ArrowTrendingDownIcon, XCircleIcon } from "@heroicons/react/24/outline";
 import {AcquiredBadge, StatusBadge} from "./Badges";
 
 interface ListProps {
@@ -8,14 +8,34 @@ interface ListProps {
 }
 
 function List({studios}: ListProps) {
-    
+
+  const getIcon = (status: Status) => {
+    switch (status) {
+      case Status.CLOSED:
+        return (
+          <XCircleIcon className="w-[80px]" />
+          // <img className="aspect-square max-w-[80px]" src="" />
+        )
+      case Status.DECLINING:
+        return (
+          <ArrowTrendingDownIcon className="w-[80px]" />
+          // <img className="aspect-square max-w-[80px]" src="" />
+        )
+      case Status.REVIVED:
+        return (
+          <></>
+          // <img className="aspect-square max-w-[80px]" src="" />
+        )
+    }
+  }
+
   return (
     <ul id="studioList" className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto px-10">
       {studios.map(studio => (
         <li key={studio.name} className="flex flex-row gap-4 px-7 pt-6 pb-4 hover:rounded-xl hover:outline hover:outline-black/5 hover:shadow-lg mt-5">
           <div>
             {/* <img className="aspect-square max-w-[80px]" src={studio.logo}/> */}
-            <XCircleIcon className="w-[80px]" />
+            {getIcon(studio.status)}
             <div className="flex justify-around text-sm my-2">
               <time dateTime={studio.dateFounded.toString()} title={`${studio.dateFounded.toString()}`}>
                 {studio.dateFounded.getFullYear()}
