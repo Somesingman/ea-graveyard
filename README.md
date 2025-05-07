@@ -60,9 +60,7 @@ Include the name of the game studio and parent company. Instead of listing indiv
 If you have an issues or suggestions, please [open a new issue](https://github.com/Somesingman/ea-graveyard/issues/new) describing the improvement or feature you would like to see.
 
 # TODO:
-- Create github action that checks links are still valid
-- Create pull request template
 - Update icons with final icons
-- Script to add new game studios
 - Nice to haves:
   - Apply additional sort on studios that have null for a particular sorting field. (ie studio that has not closed, should be sorted by acquired date or date founded when sorting by date closed)
+  - Script to add new game studios
