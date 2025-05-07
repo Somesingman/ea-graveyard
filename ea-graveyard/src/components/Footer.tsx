@@ -18,10 +18,10 @@ export function Footer() {
         </div>
         <div className="flex flex-row text-center self-center gap-4">
           <a href="">
-            <img src="./socials/bluesky_logo.svg" alt="BlueSky" className="h-[48px] w-[48px] fill-white" />
+            <img src="./socials/bluesky_logo.svg" alt="BlueSky" className="h-[36px] w-[36px] fill-white" />
           </a>
           <a href="">
-            <img src="./socials/github_mark_white.svg" alt="Github" width="48" height="48" />
+            <img src="./socials/github_mark_white.svg" alt="Github" className="h-[36px] w-[36px]" />
           </a>
         </div>
       </div>

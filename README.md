@@ -47,6 +47,10 @@ The status can only be either `closed`, `declining`, or `revived` as a string.
 
 The link should be to a resource that announces the closure of the studio along with additional informationa about the game studio and the games it is known for developing. Links to a news organization is preferable. **Please do not use links from the studio or parent company itself, it is common for these links to go dead after the studio's closure.**
 
+Also please avoid the following news sources if possible as the link-checker workflow cannot check it's validity:
+- www.ign.com
+- www.financialpost.com
+
 ### Search Tags
 
 Include the name of the game studio and parent company. Instead of listing individual video games, list prominent video game series the game studio is known for developing or heavily associated with.
