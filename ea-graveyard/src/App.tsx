@@ -9,6 +9,7 @@ import { SearchBox } from './components/SearchBar';
 import { FilterType } from './types/Filter';
 import { SortType } from './types/Sort';
 import { Footer } from './components/Footer';
+import { NightModeToggle } from './components/NightModeToggle';
 
 // data
 import rawStudioData from './studios.json';
@@ -83,11 +84,12 @@ function App() {
   }, [currentFilter, currentSort, searchTag, rawStudioList])
 
   return (
-    <div className={`${nightModeOn ? "light" : "dark"} dark:bg-gray-800`}>
+    <div className={`${nightModeOn ? "dark" : "light"} dark:bg-gray-800`}>
       <div className="max-w-[1600px] pb-10 mx-auto">
         <h1 className="text-6xl text-center p-10 dark:text-white">EA Graveyard</h1>
         <h2 className="text-3xl text-center dark:text-white">🚧Still Under Construction🚧</h2>
-        <div className="flex flex-col lg:flex-row justify-center py-4 px-10 text-center gap-4">
+        <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
+        <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
           <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
           <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
           <Sort currentSort={currentSort} sortHandler={setSort}/>

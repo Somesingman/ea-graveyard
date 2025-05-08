@@ -64,7 +64,7 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
             value={searchValue}
             onFocus={() => handleSearchBarFocus()}
             onChange={(e: React.FormEvent<HTMLInputElement>) => handleSearchTextChange(e.currentTarget.value)}
-            className="w-full rounded-md bg-white dark:bg-gray-700 px-3 py-2 text-lg text-gray-900 dark:placeholder-gray-400 dark:text-white shadow-xs dark:border-gray-600"
+            className="w-full rounded-md bg-white dark:bg-gray-700 px-3 py-2 text-lg text-gray-900 dark:placeholder-gray-400 dark:text-white shadow-xs dark:border-gray-600 ring-2 ring-black/5"
           />
         </div>
         <div id="studioSearchTagList" className="relative">

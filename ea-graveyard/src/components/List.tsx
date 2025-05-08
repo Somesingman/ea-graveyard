@@ -63,7 +63,7 @@ function List({studios}: ListProps) {
               )}
               <p>{studio.description}</p>
               <div className="flex flex-row self-end mt-auto">
-                <button role="link" type="button" aria-labelledby="latest news button" className="size-9 rounded-md bg-gray-100 hover:bg-gray-500 dark:bg-gray-600 dark:hover:bg-gray-500 focus:ring-4 px-1 m-2 py-0.5">
+                <button role="link" type="button" aria-labelledby="latest news button" className="size-9 rounded-md bg-gray-100 hover:bg-gray-500 dark:bg-gray-600 dark:hover:bg-gray-400 focus:ring-4 px-1 m-2 py-0.5">
                   <a href={studio.link} target="_blank" rel="noopener noreferrer">
                     <NewspaperIcon className="size-6 mx-auto dark:stroke-white"/>
                   </a>
