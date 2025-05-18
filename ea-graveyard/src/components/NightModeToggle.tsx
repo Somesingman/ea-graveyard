@@ -12,6 +12,7 @@ export function NightModeToggle({toggleDefaultState, toggleHandler}: ToggleProps
     const handleChange = () => {
         setIsChecked(!isChecked);
         toggleHandler(!isChecked);
+        localStorage.setItem("nightMode", isChecked ? 'light' : 'dark');
     }
 
     return (

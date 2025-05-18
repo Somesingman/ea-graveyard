@@ -34,7 +34,7 @@ interface AcquiredBadgeProps {
 export function AcquiredBadge({company, acquiredDate}: AcquiredBadgeProps) {
 
   return (
-    <span className={"rounded-md px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 dark:text-gray-300 ring-2 ring-gray-500 ring-inset my-"}>
+    <span className={"rounded-md px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 dark:text-gray-300 ring-2 ring-gray-500 ring-inset"}>
       Acquired by {company} in {acquiredDate.getFullYear()}
     </span>
   )
