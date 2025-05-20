@@ -1,3 +1,4 @@
+.PHONY: restart
 
 build:
 	docker compose build
@@ -12,7 +13,9 @@ start:
 	docker compose up --remove-orphans --detach 
 
 stop:
-	docker compose --profile "*" down --remove-orphans
+	docker compose --profile "*" down -v --remove-orphans
+
+restart: stop start
 
 e2e-start:
 	docker compose --profile e2e up --detach
