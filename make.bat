@@ -7,6 +7,7 @@ if "%1" EQU "setup" CALL :Setup
 if "%1" EQU "shell" CALL :Shell
 if "%1" EQU "start" CALL :Start
 if "%1" EQU "stop" CALL :Stop
+if "%1" EQU "restart" CALL :Restart
 if "%1" EQU "int-shell" CALL :E2E-shell
 if "%1" EQU "int-start" CALL :E2E-start
 GOTO :EOF
@@ -48,6 +49,11 @@ EXIT /b
 
 :Stop
 docker compose --profile "*" down --remove-orphans
+EXIT /b
+
+:Restart
+CALL :Stop
+CALL :Start
 EXIT /b
 
 :E2E-start
