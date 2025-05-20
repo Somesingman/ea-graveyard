@@ -28,8 +28,9 @@ If you are not familiar or do not want to use `git`, please submit a [github iss
 
 1. Fork this repository
 2. Create a new branch in your forked version of the repository. Preferably name it with the game studio name you intend to include
-3. Switch to that branch and open the `studios.json` file
-4. WIP
+3. Switch to that branch and open the `studios.json` file and add a new entry
+4. Commit your work in git and [create a Pull Request (PR)](https://help.github.com/en/articles/creating-a-pull-request) using the newly created branch.
+
 
 ## Guidelines
 
@@ -60,7 +61,8 @@ Include the name of the game studio and parent company. Instead of listing indiv
 If you have an issues or suggestions, please [open a new issue](https://github.com/Somesingman/ea-graveyard/issues/new) describing the improvement or feature you would like to see.
 
 # TODO:
-- Update icons with final icons
+- Clean up README
+- Add analytics
 - Nice to haves:
   - Apply additional sort on studios that have null for a particular sorting field. (ie studio that has not closed, should be sorted by acquired date or date founded when sorting by date closed)
   - Script to add new game studios

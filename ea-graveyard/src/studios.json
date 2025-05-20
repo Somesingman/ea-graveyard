@@ -9,7 +9,6 @@
         "dateAcquired": "1998",
         "dateClosed": "2003-03-31",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
-        "logo": "./logos/Westwood_Studios_1994.svg",
         "searchTags": [
             "Westwood Studios",
             "EA",
@@ -28,7 +27,6 @@
         "dateAcquired": "1997",
         "dateClosed": "2015-04-05",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
-        "logo": "./logos/Maxis.svg",
         "searchTags": [
             "Maxis",
             "EA",
@@ -46,7 +44,6 @@
         "dateAcquired": "2007",
         "dateClosed": "2009-11-17",
         "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
-        "logo": "./logos/Pandemic_Studios.svg",
         "searchTags": [
             "Pandemic Studios",
             "EA",
@@ -65,7 +62,6 @@
         "dateAcquired": null,
         "dateClosed": "2017-10-17",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Visceral Games",
             "EA",
@@ -86,7 +82,6 @@
         "dateAcquired": "2004-02-13",
         "dateClosed": "2007-11-06",
         "link": "https://www.gamespot.com/articles/ea-chicago-closing/1100-6182347/",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "NuFX",
             "EA Chicago",
@@ -107,7 +102,6 @@
         "dateAcquired": "2009-11-09",
         "dateClosed": "2013-06-14",
         "link": "https://www.gamesindustry.biz/ea-shutting-down-playfish-games",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Playfish",
             "EA",
@@ -125,7 +119,6 @@
         "dateAcquired": "2002-06-11",
         "dateClosed": "2013-04-13",
         "link": "https://www.polygon.com/2013/4/25/4266122/ea-layoffs-popcap-vancouver-quicklime",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Black Box Games",
             "EA",
@@ -142,7 +135,6 @@
         "dateAcquired": "2006-08-22",
         "dateClosed": "2013-07-12",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Phenomic",
             "EA",
@@ -162,7 +154,6 @@
         "dateAcquired": "2000-02-24",
         "dateClosed": "2013-01-30",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "DreamWorks Interactive",
             "EA",
@@ -182,7 +173,6 @@
         "dateAcquired": "1992-09-25",
         "dateClosed": "2004-03-01",
         "link": "https://www.gamesindustry.biz/ea-confirms-closure-of-origin-systems",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Origin Systems",
             "EA",
@@ -201,7 +191,6 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Bullfrog Productions",
             "EA",
@@ -220,7 +209,6 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/mythic-shut-down",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Mythic Entertainment",
             "EA",
@@ -238,7 +226,6 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/layoffs-at-ea-salt-lake",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Headgate Studios",
             "EA",
@@ -257,7 +244,6 @@
         "dateAcquired": "2017-12-01",
         "dateClosed": null,
         "link": "https://www.gamesindustry.biz/respawn-cancels-two-early-stage-projects-and-cuts-apex-legends-star-wars-jedi-teams-resulting-in-100-layoffs",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Respawn Entertainment",
             "EA",
@@ -275,7 +261,6 @@
         "dateAcquired": "2005-07-27",
         "dateClosed": "2005-07-27",
         "link": "https://www.gamesindustry.biz/ea-acquires-hypnotix-to-work-on-afl-title",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Hypnotix",
             "EA",
@@ -293,7 +278,6 @@
         "dateAcquired": "2018-07-09",
         "dateClosed": "2023-01-31",
         "link": "https://www.eurogamer.net/ea-cancels-development-of-apex-legends-mobile-battlefield-mobile",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Industrial Toys",
             "EA",
@@ -310,7 +294,6 @@
         "dateAcquired": "2007-10-11",
         "dateClosed": null,
         "link": "https://www.theverge.com/news/604549/bioware-layoffs-shifts-mass-effect",
-        "logo": "./logos/Visceral_Games.webp",
         "searchTags": [
             "Bioware",
             "EA",

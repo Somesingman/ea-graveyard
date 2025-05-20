@@ -14,11 +14,11 @@ function List({studios}: ListProps) {
     switch (status) {
       case Status.CLOSED:
         return (
-          <GameOverIcon className="aspect-square max-w-[80px] h-auto dark:fill-white dark:stroke-white" />
+          <GameOverIcon className="aspect-square w-[80px] h-auto dark:fill-white dark:stroke-white" />
         )
       case Status.DECLINING:
         return (
-          <HalfHealthIcon className="aspect-square max-w-[80px] dark:fill-white dark:stroke-white" />
+          <HalfHealthIcon className="aspect-square w-[80px] dark:fill-white dark:stroke-white" />
         )
       case Status.REVIVED:
         return (
@@ -32,7 +32,6 @@ function List({studios}: ListProps) {
       {studios.map(studio => (
         <li key={studio.name} className="flex flex-row gap-4 px-7 pt-6 pb-4 mt-5">
           <div>
-            {/* <img className="aspect-square max-w-[80px]" src={studio.logo}/> */}
             {getIcon(studio.status)}
             <div className="flex justify-around text-sm my-2 dark:text-white">
               <time dateTime={studio.dateFounded.toString()} title={`${studio.dateFounded.toString()}`}>

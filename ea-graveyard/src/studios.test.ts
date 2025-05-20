@@ -16,7 +16,7 @@ describe("studios.json", () => {
         expect(studio.dateAcquired).not.toBeUndefined();
         expect(studio.dateClosed).not.toBeUndefined();
         expect(studio.link).not.toBeNull();
-        expect(studio.logo).not.toBeNull();
+        // expect(studio.logo).not.toBeNull();
         expect(studio.searchTags.length).toBeGreaterThan(0);
       } catch {
         throw new Error(`${studio.name} has empty fields that should be nonempty.`);

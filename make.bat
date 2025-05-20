@@ -13,7 +13,7 @@ GOTO :EOF
 
 :: Docker Commands (Windows Makefile)
 
-:: Potentially OLD make commands
+:: OLD make commands
 @REM :Build
 @REM docker build -t ea-graveyard:latest .
 @REM EXIT /b
