@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./ea-graveyard:/app:consistent
+      - /app/node_modules/
     ports:
       - 8080:8080
       - 4173:4173
