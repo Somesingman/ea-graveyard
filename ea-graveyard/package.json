@@ -9,7 +9,7 @@
   "author": "Somesingman",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 8080",
+    "dev": "vite --host 0.0.0.0 --port 8080 --base /ea-graveyard/",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite --host 0.0.0.0 preview",

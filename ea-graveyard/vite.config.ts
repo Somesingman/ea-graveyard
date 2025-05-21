@@ -10,7 +10,6 @@ export default defineConfig({
     tailwindcss(),
     svgr(),
   ],
-  base: '/ea-graveyard/',
   server: {
     allowedHosts: ['website'],
     watch: {
