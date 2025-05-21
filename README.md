@@ -65,4 +65,4 @@ If you have an issues or suggestions, please [open a new issue](https://github.c
 - Add analytics
 - Nice to haves:
   - Apply additional sort on studios that have null for a particular sorting field. (ie studio that has not closed, should be sorted by acquired date or date founded when sorting by date closed)
-  - Script to add new game studios
+  - Script to add new game studios  
