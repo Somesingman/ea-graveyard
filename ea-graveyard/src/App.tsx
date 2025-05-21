@@ -14,6 +14,13 @@ import { NightModeToggle } from './components/NightModeToggle';
 // data
 import rawStudioData from './studios.json';
 
+declare global {
+  interface Window {
+    umami?: any;
+  }
+}
+
+
 function App() {
   const [currentFilter, setFilter] = useState<FilterType>(FilterType.ALL)
   const [currentSort, setSort] = useState<SortType>(SortType.ReverseDateClosed)
@@ -76,6 +83,7 @@ function App() {
         return true;
       })
     if (searchTag !== '') {
+      window.umami.track('search-tag', {tag: searchTag});
       processedStudioList = rawStudioList.filter(studio => {
         return studio.searchTags.includes(searchTag);
       })
@@ -97,7 +105,6 @@ function App() {
             )
           }
         </h1>
-        <h2 className="text-3xl text-center dark:text-white">🚧Still Under Construction🚧</h2>
         <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
         <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
           <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
