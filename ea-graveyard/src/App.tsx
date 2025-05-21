@@ -85,8 +85,18 @@ function App() {
 
   return (
     <div className={`${nightModeOn ? "dark" : "light"} dark:bg-gray-800`}>
+      { process.env.NODE_ENV && 
+        <script defer src="https://elegant-quokka-05f990.netlify.app/script.js" data-website-id="be077a00-82b3-4e4d-9dde-cd33dcb1112b"/>
+      }
       <div className="max-w-[1600px] pb-10 mx-auto">
-        <h1 className="text-6xl text-center p-10 dark:text-white">EA Graveyard</h1>
+        <h1 className="text-6xl text-center p-10 dark:text-white">
+          { currentFilter == FilterType.EA ? (
+              'EA Graveyard'
+            ) : (
+              'Game Studio Graveyard'
+            )
+          }
+        </h1>
         <h2 className="text-3xl text-center dark:text-white">🚧Still Under Construction🚧</h2>
         <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
         <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
