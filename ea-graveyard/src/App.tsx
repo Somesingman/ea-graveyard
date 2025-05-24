@@ -83,7 +83,9 @@ function App() {
         return true;
       })
     if (searchTag !== '') {
-      window.umami.track('search-tag', {tag: searchTag});
+      if (process.env.NODE_ENV == 'production') {
+        window.umami.track('search-tag', {tag: searchTag});
+      }
       processedStudioList = rawStudioList.filter(studio => {
         return studio.searchTags.includes(searchTag);
       })
@@ -92,10 +94,7 @@ function App() {
   }, [currentFilter, currentSort, searchTag, rawStudioList])
 
   return (
-    <div className={`${nightModeOn ? "dark" : "light"} dark:bg-gray-800`}>
-      { process.env.NODE_ENV && 
-        <script defer src="https://elegant-quokka-05f990.netlify.app/script.js" data-website-id="be077a00-82b3-4e4d-9dde-cd33dcb1112b"/>
-      }
+    <div className={`${nightModeOn ? "dark" : "light"} dark:bg-gray-800  min-h-dvh flex flex-col justify-between`}>
       <div className="max-w-[1600px] pb-10 mx-auto">
         <h1 className="text-6xl text-center p-10 dark:text-white">
           { currentFilter == FilterType.EA ? (
