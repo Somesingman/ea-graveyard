@@ -60,10 +60,10 @@ function List({studios}: ListProps) {
               )}
               <p>{studio.description}</p>
               <div className="flex flex-row self-end mt-auto">
-                <button role="link" type="button" aria-labelledby="latest news button" className="rounded-md bg-gray-200 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-400 px-2 m-2 py-1.5">
+                <button role="link" type="button" aria-labelledby="latest news button" className="group rounded-md bg-gray-200 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-400 dark:hover:text-black px-2 m-2 py-1.5">
                   <a href={studio.link} className="flex flex-row mx-auto" target="_blank" rel="noopener noreferrer">
                     <span className="pr-1">Latest news</span>
-                    <NewspaperIcon className="size-6.5 dark:stroke-white"/>
+                    <NewspaperIcon className="size-6.5 dark:stroke-white group-hover:dark:stroke-black"/>
                   </a>
                 </button>
                 {/* <button role="button" type="button" aria-labelledby="open obtiuary button" className="hidden rounded-lg px-5 m-2 py-1.5 bg-gray-100 hover:bg-gray-500 dark:bg-gray-600 dark:hover:bg-gray-400 focus:ring-4 focus:ring-sky-300 focus:outline-none">Obituary</button> */}

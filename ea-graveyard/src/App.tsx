@@ -4,12 +4,14 @@ import './App.css'
 import List from './components/List';
 import Filter from './components/Filter';
 import Sort from './components/Sort';
-import { StudioObj } from './types/Studio';
+import { Status, StudioObj } from './types/Studio';
 import { SearchBox } from './components/SearchBar';
 import { FilterType } from './types/Filter';
 import { SortType } from './types/Sort';
 import { Footer } from './components/Footer';
 import { NightModeToggle } from './components/NightModeToggle';
+import Tombstone from '../public/game-over-grave-favicon.svg?react';
+import { DocumentTextIcon } from '@heroicons/react/24/outline';
 
 // data
 import rawStudioData from './studios.json';
@@ -25,6 +27,7 @@ function App() {
   const [currentFilter, setFilter] = useState<FilterType>(FilterType.ALL)
   const [currentSort, setSort] = useState<SortType>(SortType.ReverseDateClosed)
   const [searchTag, setSearchTag] = useState('');
+  const [logoMode, setLogoMode] = useState(false);
   const [nightModeOn, setNightMode] = useState(localStorage.getItem("nightMode") === 'dark' || !('nightMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   const rawStudioList = rawStudioData.map(studioData => new StudioObj(studioData))
@@ -79,6 +82,10 @@ function App() {
           return (studio.acquiredBy == 'EA' || studio.ownedBy == 'EA');
         } else if (currentFilter == FilterType.OTHER) {
           return (studio.acquiredBy != 'EA' && studio.ownedBy != 'EA');
+        } else if (currentFilter == FilterType.CLOSED) {
+          return studio.status == Status.CLOSED;
+        } else if (currentFilter == FilterType.DECLINING) {
+          return studio.status == Status.DECLINING;
         }
         return true;
       })
@@ -104,7 +111,23 @@ function App() {
             )
           }
         </h1>
-        <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <button onClick={() => setLogoMode(!logoMode)} className="group flex flex-row items-center gap-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 text-black dark:text-white font-semibold hover:text-white dark:hover:text-black py-2 px-4 hover:border-transparent rounded min-w-[200px]">
+              {logoMode ? (
+                  <>
+                    <DocumentTextIcon className="aspect-square w-[40px] h-auto dark:stroke-white group-hover:dark:stroke-black" />
+                    <span className="w-full">Obituary Mode</span>
+                  </>
+                ) : (
+                  <>
+                    <Tombstone className="aspect-square w-[40px] h-auto dark:stroke-white group-hover:dark:stroke-black" />
+                    <span className="w-full">Logo Mode</span>
+                  </>
+                )
+              }
+            </button>
+          <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
+        </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
           <SearchBox availableSearchTags={allSearchTags} setSearchTag={setSearchTag} />
           <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />

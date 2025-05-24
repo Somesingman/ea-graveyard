@@ -2,7 +2,7 @@
 export function Footer() {
     
   return (
-    <footer className="bg-red-400 dark:bg-red-900 w-full text-white px-10 lg:px-0">
+    <footer className="bg-red-500 dark:bg-red-900 w-full text-white px-10 lg:px-0">
       <div className="flex flex-col max-w-[650px] self-center text-center mx-auto py-10 gap-y-5">
         <h1 className="text-6xl">EA Graveyard</h1>
         <div className="flex flex-col text-lg gap-y-10">

@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
-import { StudioObj } from "../types/Studio";
+import { Status, StudioObj } from "../types/Studio";
 import { FilterType } from "../types/Filter";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
@@ -48,6 +48,14 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
     {
       value: FilterType.OTHER,
       label: `Other Studios - ${studios.filter(studio => !(studio.acquiredBy == 'EA' || studio.ownedBy == 'EA')).length}`,
+    },
+    {
+      value: FilterType.CLOSED,
+      label: `Closed - ${studios.filter(studio => studio.status == Status.CLOSED).length}`,
+    },
+    {
+      value: FilterType.DECLINING,
+      label: `In Decline - ${studios.filter(studio => studio.status == Status.DECLINING).length}`,
     }
   ]
 
