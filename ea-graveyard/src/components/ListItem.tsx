@@ -30,9 +30,20 @@ function ListItem({studio, logoMode}: ListItemProps) {
     }
   }
 
+  const logoVisibility = () => {
+    if (logoMode) {
+      if (onHover) {
+        return 'opacity-0'
+      } else {
+        return 'opacity-100'
+      }
+    }
+    return 'opacity-0'
+  }
+
   return (
     <li className="relative flex flex-row gap-4 px-7 pt-6 pb-4 mt-5">
-      <div id={`${studio.key}-logo`} className={`${!logoMode && "hidden"} ${onHover && "opacity-0"} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
+      <div id={`${studio.key}-logo`} className={`${logoVisibility()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
           <img className="p-4" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
       </div>
       <div className={`${logoMode ? "opacity-0 hover:opacity-100" : "opacity-100"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
