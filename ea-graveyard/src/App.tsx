@@ -133,7 +133,7 @@ function App() {
           <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
           <Sort currentSort={currentSort} sortHandler={setSort}/>
         </div>
-        <List studios={studioList} />
+        <List studios={studioList} logoMode={logoMode}/>
       </div>
       <Footer />
     </div>

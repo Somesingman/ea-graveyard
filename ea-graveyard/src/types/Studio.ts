@@ -14,7 +14,7 @@ export interface RawStudioInfo {
   dateAcquired: string | null;
   dateClosed: string | null;
   link: string;
-  // logo: string;            // Not used currently, potentially used in future updates
+  logo: string;            // Not used currently, potentially used in future updates
   searchTags: string[];
 }
 
@@ -28,7 +28,7 @@ export class StudioObj {
   dateAcquired: Date | null;  // If null, it means studio was never acquired
   dateClosed: Date | null;
   link: string;
-  // logo: string;
+  logo: string | null;
   searchTags: string[];
 
   key: string;
@@ -43,9 +43,13 @@ export class StudioObj {
     this.dateAcquired = rawData.dateAcquired ? new Date(rawData.dateAcquired) : null;
     this.dateClosed = rawData.dateClosed ? new Date(rawData.dateClosed) : null;
     this.link = rawData.link;
-    // this.logo = rawData.logo;
+    this.logo = rawData.logo ? rawData.logo : null;
     this.searchTags = rawData.searchTags;
 
-    this.key = this.name.toLowerCase().replace(/s/g, '');
+    this.key = this.name.toLowerCase()
+                        .replace(/s/g, '')
+                        .replace(/[^a-z0-9 -]/g, '')
+                        .replace(/\s+/g, '-')
+                        .replace(/-+/g, '-');
   }
 }
