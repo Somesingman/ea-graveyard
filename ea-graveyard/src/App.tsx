@@ -112,7 +112,7 @@ function App() {
           }
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <button onClick={() => setLogoMode(!logoMode)} className="group flex flex-row items-center gap-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 text-black dark:text-white font-semibold hover:text-white dark:hover:text-black py-2 px-4 hover:border-transparent rounded min-w-[200px]">
+            {/* <button onClick={() => setLogoMode(!logoMode)} className="group flex flex-row items-center gap-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 text-black dark:text-white font-semibold hover:text-white dark:hover:text-black py-2 px-4 hover:border-transparent rounded min-w-[200px]">
               {logoMode ? (
                   <>
                     <DocumentTextIcon className="aspect-square w-[40px] h-auto dark:stroke-white group-hover:dark:stroke-black" />
@@ -125,7 +125,7 @@ function App() {
                   </>
                 )
               }
-            </button>
+            </button> */}
           <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
