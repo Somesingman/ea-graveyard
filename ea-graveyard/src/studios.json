@@ -305,5 +305,196 @@
             "Dragon Age",
             "Star Wars: The Old Republic"
         ]
+    }, {
+        "name": "Ensemble Studios",
+        "status": "closed",
+        "ownedBy": "Microsoft",
+        "acquiredBy": "Microsoft",
+        "description": "US video game developer known for creating the Age of Empires series and the first Halo Wars entry.",
+        "dateFounded": "1994",
+        "dateAcquired": "2001",
+        "dateClosed": "2009-01-29",
+        "link": "https://www.ign.com/articles/2009/01/30/ensemble-says-goodbye",
+        "searchTags": [
+            "Microsoft",
+            "Ensemble Studios",
+            "Age of Empires",
+            "Age of Mythology",
+            "Halo Wars"
+        ]
+    }, {
+        "name": "Monolith Productions",
+        "status": "closed",
+        "ownedBy": "Warner Bros. Games",
+        "acquiredBy": "Warner Bros. Games",
+        "description": "US video game developer that developed the LithTech game engine. They were known for developing FPS games such as Blood, No One Lives Forever, and the F.E.A.R. series. Other games of reknown in their catalog includes the Condemned Series and Middle-earth: Shadow of Morder series.",
+        "dateFounded": "1994",
+        "dateAcquired": "2004-08",
+        "dateClosed": "2025-02-25",
+        "link": "https://www.gamesindustry.biz/warner-bros-shuttering-monolith-productions-player-first-games-and-warner-bros-san-diego",
+        "searchTags": [
+            "Warner Bros. Games",
+            "Monolith Productions",
+            "Blood",
+            "No One Lives Forever",
+            "F.E.A.R.",
+            "Condemnded",
+            "Middle-earth: Shadow of Morder"
+        ]
+    }, {
+        "name": "Tango Gameworks",
+        "status": "revived",
+        "ownedBy": "Krafton",
+        "acquiredBy": "Krafton",
+        "description": "Founded by Shinji Mikami, the company was almost immediately acquired by ZeniMax Media before being acquired by Microsoft in 2021. After the Microsoft shutdown, the studio was acquired by South Korean publisher Krafton. The studio is known for The Evil Within series, Ghotwire: Tokyo, and Hi-Fi Rush.",
+        "dateFounded": "2010-03-01",
+        "dateAcquired": "2021-03",
+        "dateClosed": "2024-06",
+        "link": "https://www.rockpapershotgun.com/shinji-mikami-thought-tango-gameworks-would-be-safe-from-closure-if-they-made-hi-fi-rush-games",
+        "searchTags": [
+            "ZeniMax Media",
+            "Microsoft",
+            "Krafton",
+            "Tango Gameworks",
+            "The Evil Within",
+            "Ghostwire: Tokyo",
+            "Hi-Fi Rush"
+        ]
+    }, {
+        "name": "Lionhead Studios Ltd.",
+        "status": "closed",
+        "ownedBy": "Microsoft",
+        "acquiredBy": "Microsoft",
+        "description": "One of the many Bullfrog Productions breakway studios, the British developer is best known for the Black & White series and Fable series.",
+        "dateFounded": "1997",
+        "dateAcquired": "2006-04-06",
+        "dateClosed": "2016-04-26",
+        "link": "https://www.polygon.com/2016/4/29/11537392/lionhead-studios-closed",
+        "searchTags": [
+            "Microsoft",
+            "Lionhead Studios",
+            "Black and White",
+            "Fable"
+        ]
+    }, {
+        "name": "Telltale Games",
+        "status": "closed",
+        "ownedBy": null,
+        "acquiredBy": null,
+        "description": "American game developer known for their focus on episodic licensed adventure games, the famed Telltale approach first appeared in their breakthrough success The Walking Dead. This would lead to other licenses from Borderlands, Game of Thrones, Minecraft, Batman, and Guardians of the Galaxy. After the company went through assignment proceedings in 2018, several assets and the trade name were acquired by LCG Entertainment. As none of the key creative developers returned, this obituary is for the original incarnation of the studio.",
+        "dateFounded": "2004-07",
+        "dateAcquired": null,
+        "dateClosed": "2018-10-11",
+        "link": "https://www.ign.com/articles/2019/12/13/telltale-games-shut-down-and-revival-explained",
+        "searchTags": [
+            "Telltale Games",
+            "The Walking Dead",
+            "The Wolf Among Us",
+            "Tales from the Borderlands",
+            "Game of Thrones",
+            "Minecraft: STory Mode",
+            "Batman: The Telltale Series"
+        ]
+    }, {
+        "name": "Looking Glass Studios",
+        "status": "closed",
+        "ownedBy": null,
+        "acquiredBy": null,
+        "description": "A US developer famed for developing Ultima Underworld, the System Shock series, and the Thief series. The studio's laid the foundation for other immerseive action games that has influenced games such as Deus Ex and Dishonored.",
+        "dateFounded": "1990",
+        "dateAcquired": null,
+        "dateClosed": "2000-05-24",
+        "link": "https://www.ign.com/articles/2000/05/25/looking-glass-broken",
+        "searchTags": [
+            "Looking Glass Studios",
+            "Ultima Underworld",
+            "System Shock",
+            "Thief"
+        ]
+    }, {
+        "name": "Clover Studios",
+        "status": "closed",
+        "ownedBy": "Capcom",
+        "acquiredBy": null,
+        "description": "A semi-autonomous Japanese developer founded by Capcom, that focused on the creation of IP but failed to perform on par with Capcom's existing series. Capcom's attempt to merge the studio back into the company led to resignation of the studio members leading to the studio's closure. They were known for God Hang, Ōkami, and the Viewtiful Joe series.",
+        "dateFounded": "2004-07-01",
+        "dateAcquired": null,
+        "dateClosed": "2007-03",
+        "link": "https://www.gamesindustry.biz/capcom-to-close-clover-studio",
+        "searchTags": [
+            "Capcom",
+            "Clover Studios",
+            "Viewtiful Joe",
+            "Okami",
+            "God Hand"
+        ]
+    }, {
+        "name": "Japan Studio",
+        "status": "closed",
+        "ownedBy": "Sony Interactive Entertainment",
+        "acquiredBy": null,
+        "description": "A Japanese studio that was part of Sony Interactive Entertainment. It was formed of multiple internal development teams including Team Asobi, Team Ico, and Team Gravity. As a division, they developed Ape Escape, Patapon, the Knack series, the Astro Bot series, Ico, Shadow of the Colossus, and Gravity Rush. Many notable employees left the company in 2021 and Sony eliminated all units except Team Asobi.",
+        "dateFounded": "2005-07-01",
+        "dateAcquired": null,
+        "dateClosed": "2021-04-01",
+        "link": "https://www.gamesindustry.biz/sony-shuts-down-japan-studio-development-report",
+        "searchTags": [
+            "Sony Interactive Entertainment",
+            "Japan Studio",
+            "Team Ico",
+            "Team Asobi",
+            "Team Gravity",
+            "Ape Escape",
+            "Patapon",
+            "Knack",
+            "Astro Bot",
+            "Ico",
+            "Shadow of the Colossus",
+            "Gravity Rush"
+        ]
+    }, {
+        "name": "Team Bondi",
+        "status": "closed",
+        "ownedBy": null,
+        "acquiredBy": null,
+        "description": "An Australian developer that created their one and only game: L.A. Noire. After controversy over allegations of poor working conditions and financial difficulty, the studio was liquidated with Kennedy Miller Mitchell purchasing the studio's assets and IP. An attempted LA Noire successor game under KMM was then canceled around 2013.",
+        "dateFounded": "2003",
+        "dateAcquired": null,
+        "dateClosed": "2011-10-05",
+        "link": "https://sg.finance.yahoo.com/news/2011-10-05-la-noire-developer-team-bondi-shutting-down.html",
+        "searchTags": [
+            "Team Bondi",
+            "LA Noire"
+        ]
+    }, {
+        "name": "Vigil Games",
+        "status": "closed",
+        "ownedBy": "THQ",
+        "acquiredBy": "THQ",
+        "description": "A US studio that developed the Darksiders series. The studio's parent company, THQ, went bankrupt in 2013 and while the Darksider's franchise was acquired by Nordic Games, nobody bid for the studio itself and it was subsequently closed. The original founder and many staff founded Gunfire Games in 2014. Amusingly, the new studio was then acquired by THQ Nordic (originally Nordic Games) in 2019.",
+        "dateFounded": "2005",
+        "dateAcquired": "2006-03-17",
+        "dateClosed": "2013-01-23",
+        "link": "https://www.vgchartz.com/article/250697/vigil-games-closes-down-after-not-being-sold-off-in-the-thq-auction/",
+        "searchTags": [
+            "Vigil Games",
+            "Darksiders"
+        ]
+    }, {
+        "name": "Volition",
+        "status": "closed",
+        "ownedBy": "Embracer Group",
+        "acquiredBy": "Embracer Group",
+        "description": "A US studio that is most known for creating the Red Faction series and Saints Row series. Volition was of the many studios that was a part of the THQ bankruptcy. The studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group. The studio was closed as part of restructuring within the Embracer Group.",
+        "dateFounded": "1993-06-14",
+        "dateAcquired": "2000-08",
+        "dateClosed": "2023-08-31",
+        "link": "https://www.gamesindustry.biz/volition-games-closes",
+        "searchTags": [
+            "Volition",
+            "FreeSpace",
+            "Red Faction",
+            "Saints Row"
+        ]
     }
 ]

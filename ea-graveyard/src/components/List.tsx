@@ -30,7 +30,7 @@ function List({studios}: ListProps) {
   return (
     <ul id="studioList" className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto px-10">
       {studios.map(studio => (
-        <li key={studio.name} className="flex flex-row gap-4 px-7 pt-6 pb-4 mt-5">
+        <li key={studio.name} className="flex flex-row gap-4 sm:px-7 py-4 mt-5">
           <div>
             {getIcon(studio.status)}
             <div className="flex justify-around text-sm my-2 dark:text-white">
