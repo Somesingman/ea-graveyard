@@ -1,6 +1,4 @@
-import { Status, StudioObj } from "../types/Studio"
-import GameOverIcon from '../../public/icons/game-over.svg?react';
-import HalfHealthIcon from '../../public/icons/life.svg?react';
+import { StudioObj } from "../types/Studio"
 import ListItem from "./ListItem";
 
 interface ListProps {

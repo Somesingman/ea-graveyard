@@ -13,6 +13,7 @@ To add a game developer studio, gather the following information:
 - `acquiredBy`: Company that acquired the studio (not all studios were acquired)
 - `dateFounded`: Date of founding
 - `dateAcquired`: Date when acquired (when applicable)
+- `description`: Short description about the studio and their most popular video games and game series
 - `dateClosed`: Date when studio was closed (when applicable)
 - `link`: A link with the latest relevant information about the studio
 - `logo`: A path (or link) to a high quality image of the studio's logo. An SVG is preferable, otherwise have a minimum height and width of 255px

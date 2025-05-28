@@ -11,7 +11,7 @@ interface ListItemProps {
 }
 
 function ListItem({studio, logoMode}: ListItemProps) {
-  const [logoVisibility, setLogoVisibility] = useState(false);
+  const [logoVisibility, setLogoVisibility] = useState(true);
 
   const getIcon = (status: Status) => {
     switch (status) {
@@ -33,21 +33,28 @@ function ListItem({studio, logoMode}: ListItemProps) {
   const logoClass = () => {
     if (logoMode) {
       if (logoVisibility) {
-        return 'opacity-0'
+        return 'opacity-100'
       } else {
-        return 'opacity-100 cursor-pointer'
+        return 'opacity-0'
       }
     }
     return 'opacity-0'
   }
 
+  const onHover = (newVisibility:boolean) => {
+    if (logoMode) {
+      setLogoVisibility(newVisibility);
+    }
+  }
+
   return (
     <li className="relative flex flex-row gap-4 sm:px-7 pt-6 pb-4 mt-5">
       <div id={`${studio.key}-logo`} className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
-          <img className="p-4" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
+          <img className="lg:p-4" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
       </div>
-      <div className={`${logoVisibility ? "opacity-100" : "opacity-0 cursor-pointer"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
-        onClick={() => setLogoVisibility(!logoVisibility)}
+      <div className={`${(logoMode && logoVisibility) ? "opacity-0" : "opacity-100"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
+        onMouseEnter={() => onHover(false)}
+        onMouseLeave={() => onHover(true)}
       >
         <div>
           {getIcon(studio.status)}
