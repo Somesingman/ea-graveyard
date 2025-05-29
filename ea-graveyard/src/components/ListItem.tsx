@@ -49,10 +49,12 @@ function ListItem({studio, logoMode}: ListItemProps) {
 
   return (
     <li className="relative flex flex-row gap-4 sm:px-7 pt-6 pb-4 mt-5">
-      <div id={`${studio.key}-logo`} className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
-          <img className="lg:p-4" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
-      </div>
-      <div className={`${(logoMode && logoVisibility) ? "opacity-0" : "opacity-100"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
+      {studio.logo &&
+        <div id={`${studio.key}-logo`} className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
+            <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
+        </div>
+      }
+      <div className={`${(logoMode && logoVisibility && studio.logo) ? "opacity-0" : "opacity-100"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
         onMouseEnter={() => onHover(false)}
         onMouseLeave={() => onHover(true)}
       >

@@ -196,7 +196,7 @@
         "status": "closed",
         "ownedBy": "EA",
         "acquiredBy": "EA",
-        "description": "British based game developer known at the time for their innovative and creative games such as the Theme Park, Dungeon Keeper, and Syndicate series.",
+        "description": "British based game developer known at the time for their innovative and creative games such as the Theme Park, the Dungeon Keeper series, and Syndicate series. Many spiritual sequels to their games have been created since their closure.",
         "dateFounded": "1987",
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
@@ -238,6 +238,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/layoffs-at-ea-salt-lake",
+        "logo": "./public/logos/Headgate.png",
         "searchTags": [
             "Headgate Studios",
             "EA",
@@ -256,6 +257,7 @@
         "dateAcquired": "2017-12-01",
         "dateClosed": null,
         "link": "https://www.gamesindustry.biz/respawn-cancels-two-early-stage-projects-and-cuts-apex-legends-star-wars-jedi-teams-resulting-in-100-layoffs",
+        "logo": "./public/logos/Respawn_Entertainment.svg",
         "searchTags": [
             "Respawn Entertainment",
             "EA",
@@ -273,6 +275,7 @@
         "dateAcquired": "2005-07-27",
         "dateClosed": "2005-07-27",
         "link": "https://www.gamesindustry.biz/ea-acquires-hypnotix-to-work-on-afl-title",
+        "logo": "./public/logos/Hypnotix.svg",
         "searchTags": [
             "Hypnotix",
             "EA",
@@ -290,6 +293,7 @@
         "dateAcquired": "2018-07-09",
         "dateClosed": "2023-01-31",
         "link": "https://www.eurogamer.net/ea-cancels-development-of-apex-legends-mobile-battlefield-mobile",
+        "logo": "./public/logos/Industrial_Toys.svg",
         "searchTags": [
             "Industrial Toys",
             "EA",
@@ -306,6 +310,7 @@
         "dateAcquired": "2007-10-11",
         "dateClosed": null,
         "link": "https://www.theverge.com/news/604549/bioware-layoffs-shifts-mass-effect",
+        "logo": "./public/logos/Bioware.svg",
         "searchTags": [
             "Bioware",
             "EA",
@@ -327,6 +332,7 @@
         "dateAcquired": "2001",
         "dateClosed": "2009-01",
         "link": "https://venturebeat.com/games/dice-summit-bruce-shelley-on-why-ensemble-studios-was-shut-after-20-million-games-sold/",
+        "logo": "./public/logos/Ensemble_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Ensemble Studios",
@@ -344,6 +350,7 @@
         "dateAcquired": "2004-08",
         "dateClosed": "2025-02-25",
         "link": "https://www.gamesindustry.biz/warner-bros-shuttering-monolith-productions-player-first-games-and-warner-bros-san-diego",
+        "logo": "./public/logos/Monolith_Productions.svg",
         "searchTags": [
             "Warner Bros. Games",
             "Monolith Productions",
@@ -363,6 +370,7 @@
         "dateAcquired": "2021-03",
         "dateClosed": "2024-06",
         "link": "https://www.rockpapershotgun.com/shinji-mikami-thought-tango-gameworks-would-be-safe-from-closure-if-they-made-hi-fi-rush-games",
+        "logo": "./public/logos/Tango_Gameworks.png",
         "searchTags": [
             "ZeniMax Media",
             "Microsoft",
@@ -382,6 +390,7 @@
         "dateAcquired": "2006-04-06",
         "dateClosed": "2016-04-26",
         "link": "https://www.polygon.com/2016/4/29/11537392/lionhead-studios-closed",
+        "logo": "./public/logos/Lionhead_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Lionhead Studios",
@@ -398,6 +407,7 @@
         "dateAcquired": null,
         "dateClosed": "2018-10-11",
         "link": "https://www.axios.com/2022/02/08/telltale-games-new-game",
+        "logo": "./public/logos/Telltale_Games.svg",
         "searchTags": [
             "Telltale Games",
             "The Walking Dead",
@@ -417,6 +427,7 @@
         "dateAcquired": null,
         "dateClosed": "2000-05-24",
         "link": "https://www.gamespot.com/articles/looking-glass-broken/1100-2577379/",
+        "logo": "./public/logos/Looking_Glass_Studios.jpg",
         "searchTags": [
             "Looking Glass Studios",
             "Ultima Underworld",
@@ -433,6 +444,7 @@
         "dateAcquired": null,
         "dateClosed": "2007-03",
         "link": "https://www.gamesindustry.biz/capcom-to-close-clover-studio",
+        "logo": "./public/logos/Clover_Studios.png",
         "searchTags": [
             "Capcom",
             "Clover Studios",
@@ -450,6 +462,7 @@
         "dateAcquired": null,
         "dateClosed": "2021-04-01",
         "link": "https://www.gamesindustry.biz/sony-shuts-down-japan-studio-development-report",
+        "logo": "./public/logos/Japan_Studio.svg",
         "searchTags": [
             "Sony Interactive Entertainment",
             "Japan Studio",
@@ -474,6 +487,7 @@
         "dateAcquired": null,
         "dateClosed": "2011-10-05",
         "link": "https://sg.finance.yahoo.com/news/2011-10-05-la-noire-developer-team-bondi-shutting-down.html",
+        "logo": "./public/logos/Team_Bondi.jpg",
         "searchTags": [
             "Team Bondi",
             "LA Noire"
@@ -488,6 +502,7 @@
         "dateAcquired": "2006-03-17",
         "dateClosed": "2013-01-23",
         "link": "https://www.vgchartz.com/article/250697/vigil-games-closes-down-after-not-being-sold-off-in-the-thq-auction/",
+        "logo": "./public/logos/Vigil_Games.png",
         "searchTags": [
             "Vigil Games",
             "Darksiders"
@@ -502,11 +517,41 @@
         "dateAcquired": "2000-08",
         "dateClosed": "2023-08-31",
         "link": "https://www.gamesindustry.biz/volition-games-closes",
+        "logo": "./public/logos/Volition.svg",
         "searchTags": [
             "Volition",
             "FreeSpace",
             "Red Faction",
             "Saints Row"
+        ]
+    }, {
+        "name": "Cliffhangar Games",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": null,
+        "description": "Best known for creating the Red Faction series and Saints Row series. Part of the THQ bankruptcy, the studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group, before being closed during restructuring.",
+        "dateFounded": "2023-07-10",
+        "dateAcquired": null,
+        "dateClosed": "2025-05-28",
+        "link": "https://www.gamesindustry.biz/ea-cancels-black-panther-and-shuts-down-cliffhanger-games",
+        "logo": "./public/logos/Cliffhangar_Games.svg",
+        "searchTags": [
+            "Cliffhangar Games",
+            "Black Panther"
+        ]
+    }, {
+        "name": "Cliffhangar Games",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": null,
+        "description": "Best known for creating the Red Faction series and Saints Row series. Part of the THQ bankruptcy, the studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group, before being closed during restructuring.",
+        "dateFounded": "2023-07-10",
+        "dateAcquired": null,
+        "dateClosed": "2025-05-28",
+        "link": "https://www.gamesindustry.biz/ea-cancels-black-panther-and-shuts-down-cliffhanger-games",
+        "searchTags": [
+            "Cliffhangar Games",
+            "Black Panther"
         ]
     }
 ]
