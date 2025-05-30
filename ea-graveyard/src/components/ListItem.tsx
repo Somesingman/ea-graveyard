@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Status, StudioObj } from "../types/Studio"
-import { NewspaperIcon } from "@heroicons/react/24/outline";
+import { ArrowPathIcon, NewspaperIcon } from "@heroicons/react/24/outline";
 import { AcquiredBadge, StatusBadge } from "./Badges";
 import GameOverIcon from '../../public/icons/game-over.svg?react';
 import HalfHealthIcon from '../../public/icons/life.svg?react';
@@ -47,12 +47,21 @@ function ListItem({studio, logoMode}: ListItemProps) {
     }
   }
 
+  const showLogo = () => {
+    setLogoVisibility(!logoVisibility);
+  }
+
   return (
     <li className="relative flex flex-row gap-4 sm:px-7 pt-6 pb-4 mt-5">
       {studio.logo &&
-        <div id={`${studio.key}-logo`} className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
-            <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
-        </div>
+        <>
+          <div className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
+              <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
+          </div>
+          <button onClick={() => showLogo()} className="[@media(hover:hover)]:hidden absolute min-w-[60px] min-h-[60px] right-0 z-3 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full">
+            <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white max-w-[40px]`} />
+          </button>
+        </>
       }
       <div className={`${(logoMode && logoVisibility && studio.logo) ? "opacity-0" : "opacity-100"} transition duration-750 ease-in-out z-2 flex flex-row gap-4`}
         onMouseEnter={() => onHover(false)}
@@ -84,7 +93,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
           </div>
         </div>
         <div className="flex flex-col items-start dark:text-white">
-            <h2 key={studio.key} className="text-3xl mb-1">
+            <h2 className="text-3xl mb-1">
               {studio.name}
             </h2>
             {studio.acquiredBy && (
