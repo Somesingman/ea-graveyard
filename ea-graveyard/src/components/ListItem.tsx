@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Status, StudioObj } from "../types/Studio"
 import { NewspaperIcon } from "@heroicons/react/24/outline";
-import {AcquiredBadge, StatusBadge} from "./Badges";
+import { AcquiredBadge, StatusBadge } from "./Badges";
 import GameOverIcon from '../../public/icons/game-over.svg?react';
 import HalfHealthIcon from '../../public/icons/life.svg?react';
 
@@ -67,7 +67,12 @@ function ListItem({studio, logoMode}: ListItemProps) {
             {` - `}
             { studio.dateClosed ? (
                 <time dateTime={studio.dateClosed.toString()} title={`${studio.dateClosed.toString()}`}>
-                    {studio.dateClosed.getFullYear()}
+                    {studio.status == Status.REVIVED ? (
+                        <s className="decoration-2">{studio.dateClosed.getFullYear()}</s>
+                      ) : (
+                        <>{studio.dateClosed.getFullYear()}</>
+                      )
+                    }
                 </time>
               ) : (
                 <span className="w-[30.2px]" />

@@ -5,7 +5,7 @@ interface SearchBoxProps {
     setSearchTag: Dispatch<SetStateAction<string>>;
 }
 
-export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
+function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
     const [searchValue, setSearchValue] = useState('');
     const [hasMatchingTags, setHasMatchingTags] = useState(false);
     const tagListRef = useRef<HTMLDivElement>(null);
@@ -83,3 +83,5 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
       </div>
     )
 }
+
+export default SearchBox;
