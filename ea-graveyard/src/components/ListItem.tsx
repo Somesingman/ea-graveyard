@@ -58,8 +58,8 @@ function ListItem({studio, logoMode}: ListItemProps) {
           <div className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
               <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
           </div>
-          <button onClick={() => showLogo()} className={`${logoMode ? '' : 'hidden'} [@media(hover:hover)]:hidden absolute min-w-[50px] min-h-[50px] right-0 z-3 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full`}>
-            <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white max-w-[35px] z-4`} />
+          <button onClick={() => showLogo()} className={`${logoMode ? '' : 'hidden'} [@media(hover:hover)]:hidden absolute w-[50px] min-h-[50px] right-0 top-[-10px] sm:top-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full z-3`}>
+            <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white w-[35px] z-4 rounded-full bg-red-800`} />
           </button>
         </>
       }
@@ -67,7 +67,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
         onMouseEnter={() => onHover(false)}
         onMouseLeave={() => onHover(true)}
       >
-        <div>
+        <div className="mt-3">
           {getIcon(studio.status)}
           <div className="flex justify-around text-sm my-2 dark:text-white">
             <time dateTime={studio.dateFounded.toString()} title={`${studio.dateFounded.toString()}`}>
@@ -93,7 +93,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
           </div>
         </div>
         <div className="flex flex-col items-start dark:text-white">
-            <h2 className="text-3xl mb-1">
+            <h2 className="text-3xl my-3">
               {studio.name}
             </h2>
             {studio.acquiredBy && (
