@@ -1,20 +1,27 @@
-import { useMemo, useState } from 'react'
-import './App.css'
+import { useEffect, useMemo, useRef, useState } from 'react';
+import './App.css';
 
-import List from './components/List';
-import Filter from './components/Filter';
-import Sort from './components/Sort';
-import { Status, StudioObj } from './types/Studio';
-import { SearchBox } from './components/SearchBar';
+// types
 import { FilterType } from './types/Filter';
 import { SortType } from './types/Sort';
-import { Footer } from './components/Footer';
-import { NightModeToggle } from './components/NightModeToggle';
+import { Status, StudioObj } from './types/Studio';
+
+// components
+import Footer from './components/Footer';
+import NightModeToggle from './components/NightModeToggle';
+import SearchBox from './components/SearchBar';
+import ToTop from './components/ToTop';
+import Filter from './components/Filter';
+import List from './components/List';
+import Sort from './components/Sort';
+
+// icons
 import Tombstone from '../public/game-over-grave-favicon.svg?react';
 import { DocumentTextIcon } from '@heroicons/react/24/outline';
 
 // data
 import rawStudioData from './studios.json';
+
 
 declare global {
   interface Window {
@@ -29,6 +36,9 @@ function App() {
   const [searchTag, setSearchTag] = useState('');
   const [logoMode, setLogoMode] = useState(false);
   const [nightModeOn, setNightMode] = useState(localStorage.getItem("nightMode") === 'dark' || !('nightMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [toTopVisibility, setToTopVisibility] = useState(false);
+
+  const refPageTop = useRef<HTMLDivElement>(null);
 
   const rawStudioList = rawStudioData.map(studioData => new StudioObj(studioData))
 
@@ -100,9 +110,26 @@ function App() {
     return sortStudios(processedStudioList);
   }, [currentFilter, currentSort, searchTag, rawStudioList])
 
+  const handleToTop = () => {
+    refPageTop.current!.scrollIntoView({ behavior: "smooth"});
+  }
+
+
+  const handleToTopVisibility = () => {
+    if (window.pageYOffset > 50) {
+      setToTopVisibility(true);
+      return;
+    }
+    setToTopVisibility(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleToTopVisibility);
+  }, [])
+
   return (
     <div className={`${nightModeOn ? "dark" : "light"} dark:bg-gray-800  min-h-dvh flex flex-col justify-between`}>
-      <div className="max-w-[1600px] pb-10 mx-auto">
+      <div ref={refPageTop} className="max-w-[1600px] pb-10 mx-auto">
         <h1 className="text-6xl text-center p-10 dark:text-white">
           { currentFilter == FilterType.EA ? (
               'EA Graveyard'
@@ -112,7 +139,7 @@ function App() {
           }
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
-            {/* <button onClick={() => setLogoMode(!logoMode)} className="group flex flex-row items-center gap-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 text-black dark:text-white font-semibold hover:text-white dark:hover:text-black py-2 px-4 hover:border-transparent rounded min-w-[200px]">
+            <button onClick={() => setLogoMode(!logoMode)} className="group flex flex-row items-center gap-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-400 text-black dark:text-white font-semibold hover:text-white dark:hover:text-black py-2 px-4 hover:border-transparent rounded min-w-[200px]">
               {logoMode ? (
                   <>
                     <DocumentTextIcon className="aspect-square w-[40px] h-auto dark:stroke-white group-hover:dark:stroke-black" />
@@ -125,7 +152,7 @@ function App() {
                   </>
                 )
               }
-            </button> */}
+            </button>
           <NightModeToggle toggleDefaultState={nightModeOn} toggleHandler={setNightMode} />
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-4 px-10 text-center gap-4">
@@ -133,11 +160,12 @@ function App() {
           <Filter studios={rawStudioList} currentFilter={currentFilter} filterHandler={setFilter} />
           <Sort currentSort={currentSort} sortHandler={setSort}/>
         </div>
-        <List studios={studioList} />
+        <List studios={studioList} logoMode={logoMode}/>
       </div>
+      <ToTop isVisible={toTopVisibility} scrollHandler={handleToTop}/>
       <Footer />
     </div>
   )
 }
 
-export default App
+export default App;

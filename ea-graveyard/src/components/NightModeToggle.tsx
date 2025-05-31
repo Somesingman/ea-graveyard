@@ -6,7 +6,7 @@ interface ToggleProps {
     toggleHandler: Dispatch<SetStateAction<boolean>>
 }
 
-export function NightModeToggle({toggleDefaultState, toggleHandler}: ToggleProps) {
+function NightModeToggle({toggleDefaultState, toggleHandler}: ToggleProps) {
     const [isChecked, setIsChecked] = useState(toggleDefaultState);
 
     const handleChange = () => {
@@ -35,3 +35,5 @@ export function NightModeToggle({toggleDefaultState, toggleHandler}: ToggleProps
         </div>
     )
 }
+
+export default NightModeToggle;

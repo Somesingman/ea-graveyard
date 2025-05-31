@@ -9,6 +9,7 @@
         "dateAcquired": "1998",
         "dateClosed": "2003-03-31",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
+        "logo": "./public/logos/Westwood-Studios-1994.svg",
         "searchTags": [
             "Westwood Studios",
             "EA",
@@ -27,6 +28,7 @@
         "dateAcquired": "1997",
         "dateClosed": "2015-04-05",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
+        "logo": "./public/logos/Maxis.svg",
         "searchTags": [
             "Maxis",
             "EA",
@@ -43,7 +45,8 @@
         "dateFounded": "1988",
         "dateAcquired": "2007",
         "dateClosed": "2009-11-17",
-        "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",
+        "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",  
+        "logo": "./public/logos/Pandemic-Studios.svg",
         "searchTags": [
             "Pandemic Studios",
             "EA",
@@ -62,6 +65,7 @@
         "dateAcquired": null,
         "dateClosed": "2017-10-17",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
+        "logo": "./public/logos/Visceral-Games.svg",
         "searchTags": [
             "Visceral Games",
             "EA",
@@ -82,6 +86,7 @@
         "dateAcquired": "2004-02-13",
         "dateClosed": "2007-11-06",
         "link": "https://www.gamespot.com/articles/ea-chicago-closing/1100-6182347/",
+        "logo": "./public/logos/NUFX.svg",
         "searchTags": [
             "NuFX",
             "EA Chicago",
@@ -102,6 +107,7 @@
         "dateAcquired": "2009-11-09",
         "dateClosed": "2013-06-14",
         "link": "https://www.gamesindustry.biz/ea-shutting-down-playfish-games",
+        "logo": "./public/logos/PlayFish.svg",
         "searchTags": [
             "Playfish",
             "EA",
@@ -119,6 +125,7 @@
         "dateAcquired": "2002-06-11",
         "dateClosed": "2013-04-13",
         "link": "https://www.polygon.com/2013/4/25/4266122/ea-layoffs-popcap-vancouver-quicklime",
+        "logo": "./public/logos/Black-Box.svg",
         "searchTags": [
             "Black Box Games",
             "EA",
@@ -135,6 +142,7 @@
         "dateAcquired": "2006-08-22",
         "dateClosed": "2013-07-12",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
+        "logo": "./public/logos/Phenomic.svg",
         "searchTags": [
             "Phenomic",
             "EA",
@@ -154,6 +162,7 @@
         "dateAcquired": "2000-02-24",
         "dateClosed": "2013-01-30",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
+        "logo": "./public/logos/DreamWorks-Interactive-1997.svg",
         "searchTags": [
             "DreamWorks Interactive",
             "EA",
@@ -173,6 +182,7 @@
         "dateAcquired": "1992-09-25",
         "dateClosed": "2004-03-01",
         "link": "https://www.gamesindustry.biz/ea-confirms-closure-of-origin-systems",
+        "logo": "./public/logos/Origin.svg",
         "searchTags": [
             "Origin Systems",
             "EA",
@@ -186,11 +196,12 @@
         "status": "closed",
         "ownedBy": "EA",
         "acquiredBy": "EA",
-        "description": "British based game developer known at the time for their innovative and creative games such as the Theme Park, Dungeon Keeper, and Syndicate series.",
+        "description": "British based game developer known at the time for their innovative and creative games such as the Theme Park, the Dungeon Keeper series, and Syndicate series. Many spiritual sequels to their games have been created since their closure.",
         "dateFounded": "1987",
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
+        "logo": "./public/logos/Bullfrog.svg",
         "searchTags": [
             "Bullfrog Productions",
             "EA",
@@ -209,6 +220,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/mythic-shut-down",
+        "logo": "./public/logos/Mythic-Entertainment.svg",
         "searchTags": [
             "Mythic Entertainment",
             "EA",
@@ -226,6 +238,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/layoffs-at-ea-salt-lake",
+        "logo": "./public/logos/Headgate.png",
         "searchTags": [
             "Headgate Studios",
             "EA",
@@ -244,6 +257,7 @@
         "dateAcquired": "2017-12-01",
         "dateClosed": null,
         "link": "https://www.gamesindustry.biz/respawn-cancels-two-early-stage-projects-and-cuts-apex-legends-star-wars-jedi-teams-resulting-in-100-layoffs",
+        "logo": "./public/logos/Respawn_Entertainment.svg",
         "searchTags": [
             "Respawn Entertainment",
             "EA",
@@ -261,6 +275,7 @@
         "dateAcquired": "2005-07-27",
         "dateClosed": "2005-07-27",
         "link": "https://www.gamesindustry.biz/ea-acquires-hypnotix-to-work-on-afl-title",
+        "logo": "./public/logos/Hypnotix.svg",
         "searchTags": [
             "Hypnotix",
             "EA",
@@ -278,6 +293,7 @@
         "dateAcquired": "2018-07-09",
         "dateClosed": "2023-01-31",
         "link": "https://www.eurogamer.net/ea-cancels-development-of-apex-legends-mobile-battlefield-mobile",
+        "logo": "./public/logos/Industrial_Toys.svg",
         "searchTags": [
             "Industrial Toys",
             "EA",
@@ -294,6 +310,7 @@
         "dateAcquired": "2007-10-11",
         "dateClosed": null,
         "link": "https://www.theverge.com/news/604549/bioware-layoffs-shifts-mass-effect",
+        "logo": "./public/logos/Bioware.svg",
         "searchTags": [
             "Bioware",
             "EA",
@@ -313,8 +330,9 @@
         "description": "US video game developer known for creating the Age of Empires series and the first Halo Wars entry.",
         "dateFounded": "1994",
         "dateAcquired": "2001",
-        "dateClosed": "2009-01-29",
-        "link": "https://www.ign.com/articles/2009/01/30/ensemble-says-goodbye",
+        "dateClosed": "2009-01",
+        "link": "https://venturebeat.com/games/dice-summit-bruce-shelley-on-why-ensemble-studios-was-shut-after-20-million-games-sold/",
+        "logo": "./public/logos/Ensemble_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Ensemble Studios",
@@ -327,11 +345,12 @@
         "status": "closed",
         "ownedBy": "Warner Bros. Games",
         "acquiredBy": "Warner Bros. Games",
-        "description": "US video game developer that developed the LithTech game engine. They were known for developing FPS games such as Blood, No One Lives Forever, and the F.E.A.R. series. Other games of reknown in their catalog includes the Condemned Series and Middle-earth: Shadow of Morder series.",
+        "description": "They were known for developing FPS games such as Blood, No One Lives Forever, and the F.E.A.R. series. Other games of reknown in their catalog includes the Condemned Series and Middle-earth: Shadow of Morder series.",
         "dateFounded": "1994",
         "dateAcquired": "2004-08",
         "dateClosed": "2025-02-25",
         "link": "https://www.gamesindustry.biz/warner-bros-shuttering-monolith-productions-player-first-games-and-warner-bros-san-diego",
+        "logo": "./public/logos/Monolith_Productions.svg",
         "searchTags": [
             "Warner Bros. Games",
             "Monolith Productions",
@@ -346,11 +365,12 @@
         "status": "revived",
         "ownedBy": "Krafton",
         "acquiredBy": "Krafton",
-        "description": "Founded by Shinji Mikami, the company was almost immediately acquired by ZeniMax Media before being acquired by Microsoft in 2021. After the Microsoft shutdown, the studio was acquired by South Korean publisher Krafton. The studio is known for The Evil Within series, Ghotwire: Tokyo, and Hi-Fi Rush.",
+        "description": "Founded by Shinji Mikami, they were immediately acquired by ZeniMax Media before being acquired by Microsoft in 2021. After the Microsoft shutdown, the studio was acquired by South Korean publisher Krafton. The studio is known for The Evil Within series, Ghotwire: Tokyo, and Hi-Fi Rush.",
         "dateFounded": "2010-03-01",
         "dateAcquired": "2021-03",
         "dateClosed": "2024-06",
         "link": "https://www.rockpapershotgun.com/shinji-mikami-thought-tango-gameworks-would-be-safe-from-closure-if-they-made-hi-fi-rush-games",
+        "logo": "./public/logos/Tango_Gameworks.png",
         "searchTags": [
             "ZeniMax Media",
             "Microsoft",
@@ -370,6 +390,7 @@
         "dateAcquired": "2006-04-06",
         "dateClosed": "2016-04-26",
         "link": "https://www.polygon.com/2016/4/29/11537392/lionhead-studios-closed",
+        "logo": "./public/logos/Lionhead_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Lionhead Studios",
@@ -381,11 +402,12 @@
         "status": "closed",
         "ownedBy": null,
         "acquiredBy": null,
-        "description": "American game developer known for their focus on episodic licensed adventure games, the famed Telltale approach first appeared in their breakthrough success The Walking Dead. This would lead to other licenses from Borderlands, Game of Thrones, Minecraft, Batman, and Guardians of the Galaxy. After the company went through assignment proceedings in 2018, several assets and the trade name were acquired by LCG Entertainment. As none of the key creative developers returned, this obituary is for the original incarnation of the studio.",
+        "description": "Known for their focus on episodic licensed adventure games such as the Walking Dead, Borderlands, Game of Thrones, Minecraft, Batman, and Guardians of the Galaxy. The studio name was acquired by LCG Entertainment, but without any key creative developers. This obituary is for the original incarnation of the studio.",
         "dateFounded": "2004-07",
         "dateAcquired": null,
         "dateClosed": "2018-10-11",
-        "link": "https://www.ign.com/articles/2019/12/13/telltale-games-shut-down-and-revival-explained",
+        "link": "https://web.archive.org/web/20250429165240/https://www.ign.com/articles/2019/12/13/telltale-games-shut-down-and-revival-explained",
+        "logo": "./public/logos/Telltale_Games.svg",
         "searchTags": [
             "Telltale Games",
             "The Walking Dead",
@@ -404,7 +426,8 @@
         "dateFounded": "1990",
         "dateAcquired": null,
         "dateClosed": "2000-05-24",
-        "link": "https://www.ign.com/articles/2000/05/25/looking-glass-broken",
+        "link": "https://www.gamespot.com/articles/looking-glass-broken/1100-2577379/",
+        "logo": "./public/logos/Looking_Glass_Studios.jpg",
         "searchTags": [
             "Looking Glass Studios",
             "Ultima Underworld",
@@ -416,11 +439,12 @@
         "status": "closed",
         "ownedBy": "Capcom",
         "acquiredBy": null,
-        "description": "A semi-autonomous Japanese developer founded by Capcom, that focused on the creation of IP but failed to perform on par with Capcom's existing series. Capcom's attempt to merge the studio back into the company led to resignation of the studio members leading to the studio's closure. They were known for God Hang, Ōkami, and the Viewtiful Joe series.",
+        "description": "Founded by Capcom, the studio was known for God Hand, Ōkami, and the Viewtiful Joe series. Capcom's attempt to merge the studio back into the company led to resignation of the studio members leading to the studio's closure.",
         "dateFounded": "2004-07-01",
         "dateAcquired": null,
         "dateClosed": "2007-03",
         "link": "https://www.gamesindustry.biz/capcom-to-close-clover-studio",
+        "logo": "./public/logos/Clover_Studios.png",
         "searchTags": [
             "Capcom",
             "Clover Studios",
@@ -433,11 +457,12 @@
         "status": "closed",
         "ownedBy": "Sony Interactive Entertainment",
         "acquiredBy": null,
-        "description": "A Japanese studio that was part of Sony Interactive Entertainment. It was formed of multiple internal development teams including Team Asobi, Team Ico, and Team Gravity. As a division, they developed Ape Escape, Patapon, the Knack series, the Astro Bot series, Ico, Shadow of the Colossus, and Gravity Rush. Many notable employees left the company in 2021 and Sony eliminated all units except Team Asobi.",
+        "description": "Sony Interactive Entertainment studio formed of multiple internal development teams that developed Ape Escape, Patapon, the Knack series, the Astro Bot series, Ico, Shadow of the Colossus, and Gravity Rush. In 2021, Sony eliminated all units except Team Asobi.",
         "dateFounded": "2005-07-01",
         "dateAcquired": null,
         "dateClosed": "2021-04-01",
         "link": "https://www.gamesindustry.biz/sony-shuts-down-japan-studio-development-report",
+        "logo": "./public/logos/Japan_Studio.svg",
         "searchTags": [
             "Sony Interactive Entertainment",
             "Japan Studio",
@@ -457,11 +482,12 @@
         "status": "closed",
         "ownedBy": null,
         "acquiredBy": null,
-        "description": "An Australian developer that created their one and only game: L.A. Noire. After controversy over allegations of poor working conditions and financial difficulty, the studio was liquidated with Kennedy Miller Mitchell purchasing the studio's assets and IP. An attempted LA Noire successor game under KMM was then canceled around 2013.",
+        "description": "Famed for their one and only developed game: L.A. Noire. Kennedy Miller Mitchell purchased the studio's assets and IP during liquidation. An attempted LA Noire successor game under KMM was then canceled around 2013.",
         "dateFounded": "2003",
         "dateAcquired": null,
         "dateClosed": "2011-10-05",
         "link": "https://sg.finance.yahoo.com/news/2011-10-05-la-noire-developer-team-bondi-shutting-down.html",
+        "logo": "./public/logos/Team_Bondi.jpg",
         "searchTags": [
             "Team Bondi",
             "LA Noire"
@@ -471,11 +497,12 @@
         "status": "closed",
         "ownedBy": "THQ",
         "acquiredBy": "THQ",
-        "description": "A US studio that developed the Darksiders series. The studio's parent company, THQ, went bankrupt in 2013 and while the Darksider's franchise was acquired by Nordic Games, nobody bid for the studio itself and it was subsequently closed. The original founder and many staff founded Gunfire Games in 2014. Amusingly, the new studio was then acquired by THQ Nordic (originally Nordic Games) in 2019.",
+        "description": "Creator of the Darksiders series. The studio was closed as part of the THQ's bankruptcy with Nordic Games acquired the Darksiders franchise. The original founder and many staff founded Gunfire Games in 2014 and, amusingly, then acquired by THQ Nordic (originally Nordic Games) in 2019.",
         "dateFounded": "2005",
         "dateAcquired": "2006-03-17",
         "dateClosed": "2013-01-23",
         "link": "https://www.vgchartz.com/article/250697/vigil-games-closes-down-after-not-being-sold-off-in-the-thq-auction/",
+        "logo": "./public/logos/Vigil_Games.png",
         "searchTags": [
             "Vigil Games",
             "Darksiders"
@@ -485,16 +512,32 @@
         "status": "closed",
         "ownedBy": "Embracer Group",
         "acquiredBy": "Embracer Group",
-        "description": "A US studio that is most known for creating the Red Faction series and Saints Row series. Volition was of the many studios that was a part of the THQ bankruptcy. The studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group. The studio was closed as part of restructuring within the Embracer Group.",
+        "description": "Best known for creating the Red Faction series and Saints Row series. Part of the THQ bankruptcy, the studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group, before being closed during restructuring.",
         "dateFounded": "1993-06-14",
         "dateAcquired": "2000-08",
         "dateClosed": "2023-08-31",
         "link": "https://www.gamesindustry.biz/volition-games-closes",
+        "logo": "./public/logos/Volition.svg",
         "searchTags": [
             "Volition",
             "FreeSpace",
             "Red Faction",
             "Saints Row"
+        ]
+    }, {
+        "name": "Cliffhangar Games",
+        "status": "closed",
+        "ownedBy": "EA",
+        "acquiredBy": null,
+        "description": "Best known for creating the Red Faction series and Saints Row series. Part of the THQ bankruptcy, the studio was acquired by Koch Media (now Plaion) which was eventually acquired by Nordic Games' parent company, now known as the Embracer Group, before being closed during restructuring.",
+        "dateFounded": "2023-07-10",
+        "dateAcquired": null,
+        "dateClosed": "2025-05-28",
+        "link": "https://www.gamesindustry.biz/ea-cancels-black-panther-and-shuts-down-cliffhanger-games",
+        "logo": "./public/logos/Cliffhangar_Games.svg",
+        "searchTags": [
+            "Cliffhangar Games",
+            "Black Panther"
         ]
     }
 ]

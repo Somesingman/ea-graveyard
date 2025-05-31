@@ -1,5 +1,5 @@
 
-export function Footer() {
+function Footer() {
     
   return (
     <footer className="bg-red-500 dark:bg-red-900 w-full text-white px-10 lg:px-0">
@@ -29,3 +29,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export default Footer;

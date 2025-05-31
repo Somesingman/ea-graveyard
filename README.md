@@ -13,8 +13,10 @@ To add a game developer studio, gather the following information:
 - `acquiredBy`: Company that acquired the studio (not all studios were acquired)
 - `dateFounded`: Date of founding
 - `dateAcquired`: Date when acquired (when applicable)
+- `description`: Short description about the studio and their most popular video games and game series
 - `dateClosed`: Date when studio was closed (when applicable)
 - `link`: A link with the latest relevant information about the studio
+- `logo`: A path (or link) to a high quality image of the studio's logo. An SVG is preferable, otherwise have a minimum height and width of 255px
 - `status`: One out of CLOSED, REVIVED, DECLINING
 - `searchTags`: List of searchable tags based on company names and video game series 
 
@@ -49,6 +51,13 @@ The link should be to a resource that announces the closure of the studio along 
 Also please avoid the following news sources if possible as the link-checker workflow cannot check it's validity:
 - www.ign.com
 - www.financialpost.com
+
+### Logo
+
+It is preferable for the studio logo to be a file that is uploaded to this project rather than a link. An SVG is also preferred over other formats, otherwise it must have a minimum height and width of 255px.
+
+If uploading a file, place it inside the `ea-graveyard/public/logos` folder.
+
 
 ### Search Tags
 

@@ -5,7 +5,7 @@ interface SearchBoxProps {
     setSearchTag: Dispatch<SetStateAction<string>>;
 }
 
-export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
+function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
     const [searchValue, setSearchValue] = useState('');
     const [hasMatchingTags, setHasMatchingTags] = useState(false);
     const tagListRef = useRef<HTMLDivElement>(null);
@@ -69,7 +69,7 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
         </div>
         <div id="studioSearchTagList" className="relative">
           {showMatchingTags && (
-            <div ref={tagListRef} className="absolute w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+            <div ref={tagListRef} className="absolute z-3 w-full mt-2 py-1 lg:w-md origin-top-right rounded-lg bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
                 {shownTags.map(tag => (
                   <a key={tag} href="#" className="block px-4 py-2 text-lg text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-gray-900 hover:outline-hidden" role="menuitem"
                     onClick={() => handleTagSelect(tag)}
@@ -83,3 +83,5 @@ export function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
       </div>
     )
 }
+
+export default SearchBox;

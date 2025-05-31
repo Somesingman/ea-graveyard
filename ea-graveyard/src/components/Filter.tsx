@@ -81,7 +81,7 @@ export function Filter({studios, currentFilter, filterHandler}: FilterProps) {
       </div>
       <div id="studioFilterList" className="relative">
         {isOpen && (
-          <div ref={dropdownRef} className="absolute w-full lg:w-[215px] mt-2 py-1 origin-top-right rounded-lg bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
+          <div ref={dropdownRef} className="absolute z-3 w-full lg:w-[215px] mt-2 py-1 origin-top-right rounded-lg bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 focus:outline-hidden text-left" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex={-1}>
             {options.map(option => (
               <a key={option.value} href="#" className="block px-4 py-2 text-lg text-gray-700 dark:bg-gray-700 dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white hover:outline-hidden" role="menuitem"
                 onClick={() => handleOption(option.value)}
