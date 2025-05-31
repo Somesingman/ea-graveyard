@@ -59,7 +59,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
               <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
           </div>
           <button onClick={() => showLogo()} className={`${logoMode ? '' : 'hidden'} [@media(hover:hover)]:hidden absolute min-w-[50px] min-h-[50px] right-0 z-3 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full`}>
-            <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white max-w-[35px]`} />
+            <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white max-w-[35px] z-4`} />
           </button>
         </>
       }
