@@ -56,7 +56,7 @@ Also please avoid the following news sources if possible as the link-checker wor
 
 It is preferable for the studio logo to be a file that is uploaded to this project rather than a link. An SVG is also preferred over other formats, otherwise it must have a minimum height and width of 255px.
 
-If uploading a file, place it inside the `ea-graveyard/public/logos` folder.
+If uploading a file, place it inside the `ea-graveyard/public/logos` folder and the string path should start with `./logos/`.
 
 
 ### Search Tags

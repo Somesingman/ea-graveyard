@@ -9,7 +9,7 @@
         "dateAcquired": "1998",
         "dateClosed": "2003-03-31",
         "link": "https://www.gamespot.com/articles/ea-consolidates-studios-closes-westwood/1100-2909852/",
-        "logo": "./public/logos/Westwood-Studios-1994.svg",
+        "logo": "./logos/Westwood-Studios-1994.svg",
         "searchTags": [
             "Westwood Studios",
             "EA",
@@ -28,7 +28,7 @@
         "dateAcquired": "1997",
         "dateClosed": "2015-04-05",
         "link": "https://www.theverge.com/2015/3/4/8149827/ea-closing-maxis-emeryville",
-        "logo": "./public/logos/Maxis.svg",
+        "logo": "./logos/Maxis.svg",
         "searchTags": [
             "Maxis",
             "EA",
@@ -46,7 +46,7 @@
         "dateAcquired": "2007",
         "dateClosed": "2009-11-17",
         "link": "https://kotaku.com/confirmed-ea-closes-pandemic-studios-says-brand-will-5406830",  
-        "logo": "./public/logos/Pandemic-Studios.svg",
+        "logo": "./logos/Pandemic-Studios.svg",
         "searchTags": [
             "Pandemic Studios",
             "EA",
@@ -65,7 +65,7 @@
         "dateAcquired": null,
         "dateClosed": "2017-10-17",
         "link": "https://kotaku.com/ea-shuts-down-visceral-games-1819623990",
-        "logo": "./public/logos/Visceral-Games.svg",
+        "logo": "./logos/Visceral-Games.svg",
         "searchTags": [
             "Visceral Games",
             "EA",
@@ -86,7 +86,7 @@
         "dateAcquired": "2004-02-13",
         "dateClosed": "2007-11-06",
         "link": "https://www.gamespot.com/articles/ea-chicago-closing/1100-6182347/",
-        "logo": "./public/logos/NUFX.svg",
+        "logo": "./logos/NUFX.svg",
         "searchTags": [
             "NuFX",
             "EA Chicago",
@@ -107,7 +107,7 @@
         "dateAcquired": "2009-11-09",
         "dateClosed": "2013-06-14",
         "link": "https://www.gamesindustry.biz/ea-shutting-down-playfish-games",
-        "logo": "./public/logos/PlayFish.svg",
+        "logo": "./logos/PlayFish.svg",
         "searchTags": [
             "Playfish",
             "EA",
@@ -125,7 +125,7 @@
         "dateAcquired": "2002-06-11",
         "dateClosed": "2013-04-13",
         "link": "https://www.polygon.com/2013/4/25/4266122/ea-layoffs-popcap-vancouver-quicklime",
-        "logo": "./public/logos/Black-Box.svg",
+        "logo": "./logos/Black-Box.svg",
         "searchTags": [
             "Black Box Games",
             "EA",
@@ -142,7 +142,7 @@
         "dateAcquired": "2006-08-22",
         "dateClosed": "2013-07-12",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "./public/logos/Phenomic.svg",
+        "logo": "./logos/Phenomic.svg",
         "searchTags": [
             "Phenomic",
             "EA",
@@ -162,7 +162,7 @@
         "dateAcquired": "2000-02-24",
         "dateClosed": "2013-01-30",
         "link": "https://www.gamesindustry.biz/ea-phenomic-closed",
-        "logo": "./public/logos/DreamWorks-Interactive-1997.svg",
+        "logo": "./logos/DreamWorks-Interactive-1997.svg",
         "searchTags": [
             "DreamWorks Interactive",
             "EA",
@@ -182,7 +182,7 @@
         "dateAcquired": "1992-09-25",
         "dateClosed": "2004-03-01",
         "link": "https://www.gamesindustry.biz/ea-confirms-closure-of-origin-systems",
-        "logo": "./public/logos/Origin.svg",
+        "logo": "./logos/Origin.svg",
         "searchTags": [
             "Origin Systems",
             "EA",
@@ -201,7 +201,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://kotaku.com/one-explanation-behind-ea-destroying-bullfrog-1548092283",
-        "logo": "./public/logos/Bullfrog.svg",
+        "logo": "./logos/Bullfrog.svg",
         "searchTags": [
             "Bullfrog Productions",
             "EA",
@@ -220,7 +220,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/mythic-shut-down",
-        "logo": "./public/logos/Mythic-Entertainment.svg",
+        "logo": "./logos/Mythic-Entertainment.svg",
         "searchTags": [
             "Mythic Entertainment",
             "EA",
@@ -238,7 +238,7 @@
         "dateAcquired": "1995-01-06",
         "dateClosed": "2001",
         "link": "https://www.gamesindustry.biz/layoffs-at-ea-salt-lake",
-        "logo": "./public/logos/Headgate.png",
+        "logo": "./logos/Headgate.png",
         "searchTags": [
             "Headgate Studios",
             "EA",
@@ -257,7 +257,7 @@
         "dateAcquired": "2017-12-01",
         "dateClosed": null,
         "link": "https://www.gamesindustry.biz/respawn-cancels-two-early-stage-projects-and-cuts-apex-legends-star-wars-jedi-teams-resulting-in-100-layoffs",
-        "logo": "./public/logos/Respawn_Entertainment.png",
+        "logo": "./logos/Respawn_Entertainment.png",
         "searchTags": [
             "Respawn Entertainment",
             "EA",
@@ -275,7 +275,7 @@
         "dateAcquired": "2005-07-27",
         "dateClosed": "2005-07-27",
         "link": "https://www.gamesindustry.biz/ea-acquires-hypnotix-to-work-on-afl-title",
-        "logo": "./public/logos/Hypnotix.svg",
+        "logo": "./logos/Hypnotix.svg",
         "searchTags": [
             "Hypnotix",
             "EA",
@@ -293,7 +293,7 @@
         "dateAcquired": "2018-07-09",
         "dateClosed": "2023-01-31",
         "link": "https://www.eurogamer.net/ea-cancels-development-of-apex-legends-mobile-battlefield-mobile",
-        "logo": "./public/logos/Industrial_Toys.svg",
+        "logo": "./logos/Industrial_Toys.svg",
         "searchTags": [
             "Industrial Toys",
             "EA",
@@ -310,7 +310,7 @@
         "dateAcquired": "2007-10-11",
         "dateClosed": null,
         "link": "https://www.theverge.com/news/604549/bioware-layoffs-shifts-mass-effect",
-        "logo": "./public/logos/Bioware.svg",
+        "logo": "./logos/Bioware.svg",
         "searchTags": [
             "Bioware",
             "EA",
@@ -332,7 +332,7 @@
         "dateAcquired": "2001",
         "dateClosed": "2009-01",
         "link": "https://venturebeat.com/games/dice-summit-bruce-shelley-on-why-ensemble-studios-was-shut-after-20-million-games-sold/",
-        "logo": "./public/logos/Ensemble_Studios.svg",
+        "logo": "./logos/Ensemble_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Ensemble Studios",
@@ -350,7 +350,7 @@
         "dateAcquired": "2004-08",
         "dateClosed": "2025-02-25",
         "link": "https://www.gamesindustry.biz/warner-bros-shuttering-monolith-productions-player-first-games-and-warner-bros-san-diego",
-        "logo": "./public/logos/Monolith_Productions.svg",
+        "logo": "./logos/Monolith_Productions.svg",
         "searchTags": [
             "Warner Bros. Games",
             "Monolith Productions",
@@ -370,7 +370,7 @@
         "dateAcquired": "2021-03",
         "dateClosed": "2024-06",
         "link": "https://www.rockpapershotgun.com/shinji-mikami-thought-tango-gameworks-would-be-safe-from-closure-if-they-made-hi-fi-rush-games",
-        "logo": "./public/logos/Tango_Gameworks.png",
+        "logo": "./logos/Tango_Gameworks.png",
         "searchTags": [
             "ZeniMax Media",
             "Microsoft",
@@ -390,7 +390,7 @@
         "dateAcquired": "2006-04-06",
         "dateClosed": "2016-04-26",
         "link": "https://www.polygon.com/2016/4/29/11537392/lionhead-studios-closed",
-        "logo": "./public/logos/Lionhead_Studios.svg",
+        "logo": "./logos/Lionhead_Studios.svg",
         "searchTags": [
             "Microsoft",
             "Lionhead Studios",
@@ -407,7 +407,7 @@
         "dateAcquired": null,
         "dateClosed": "2018-10-11",
         "link": "https://web.archive.org/web/20250429165240/https://www.ign.com/articles/2019/12/13/telltale-games-shut-down-and-revival-explained",
-        "logo": "./public/logos/Telltale_Games.svg",
+        "logo": "./logos/Telltale_Games.svg",
         "searchTags": [
             "Telltale Games",
             "The Walking Dead",
@@ -427,7 +427,7 @@
         "dateAcquired": null,
         "dateClosed": "2000-05-24",
         "link": "https://www.gamespot.com/articles/looking-glass-broken/1100-2577379/",
-        "logo": "./public/logos/Looking_Glass_Studios.jpg",
+        "logo": "./logos/Looking_Glass_Studios.jpg",
         "searchTags": [
             "Looking Glass Studios",
             "Ultima Underworld",
@@ -444,7 +444,7 @@
         "dateAcquired": null,
         "dateClosed": "2007-03",
         "link": "https://www.gamesindustry.biz/capcom-to-close-clover-studio",
-        "logo": "./public/logos/Clover_Studios.png",
+        "logo": "./logos/Clover_Studios.png",
         "searchTags": [
             "Capcom",
             "Clover Studios",
@@ -462,7 +462,7 @@
         "dateAcquired": null,
         "dateClosed": "2021-04-01",
         "link": "https://www.gamesindustry.biz/sony-shuts-down-japan-studio-development-report",
-        "logo": "./public/logos/Japan_Studio.svg",
+        "logo": "./logos/Japan_Studio.svg",
         "searchTags": [
             "Sony Interactive Entertainment",
             "Japan Studio",
@@ -487,7 +487,7 @@
         "dateAcquired": null,
         "dateClosed": "2011-10-05",
         "link": "https://sg.finance.yahoo.com/news/2011-10-05-la-noire-developer-team-bondi-shutting-down.html",
-        "logo": "./public/logos/Team_Bondi.jpg",
+        "logo": "./logos/Team_Bondi.jpg",
         "searchTags": [
             "Team Bondi",
             "LA Noire"
@@ -502,7 +502,7 @@
         "dateAcquired": "2006-03-17",
         "dateClosed": "2013-01-23",
         "link": "https://www.vgchartz.com/article/250697/vigil-games-closes-down-after-not-being-sold-off-in-the-thq-auction/",
-        "logo": "./public/logos/Vigil_Games.png",
+        "logo": "./logos/Vigil_Games.png",
         "searchTags": [
             "Vigil Games",
             "Darksiders"
@@ -517,7 +517,7 @@
         "dateAcquired": "2000-08",
         "dateClosed": "2023-08-31",
         "link": "https://www.gamesindustry.biz/volition-games-closes",
-        "logo": "./public/logos/Volition.svg",
+        "logo": "./logos/Volition.svg",
         "searchTags": [
             "Volition",
             "FreeSpace",
@@ -534,7 +534,7 @@
         "dateAcquired": null,
         "dateClosed": "2025-05-28",
         "link": "https://www.gamesindustry.biz/ea-cancels-black-panther-and-shuts-down-cliffhanger-games",
-        "logo": "./public/logos/Cliffhangar_Games.svg",
+        "logo": "./logos/Cliffhangar_Games.svg",
         "searchTags": [
             "Cliffhangar Games",
             "Black Panther"
