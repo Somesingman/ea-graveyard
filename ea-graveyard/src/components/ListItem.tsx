@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Status, StudioObj } from "../types/Studio"
 import { ArrowPathIcon, NewspaperIcon } from "@heroicons/react/24/outline";
 import { AcquiredBadge, StatusBadge } from "./Badges";
@@ -30,6 +30,11 @@ function ListItem({studio, logoMode}: ListItemProps) {
     }
   }
 
+  useEffect(() => {
+    // Reset logos on when turning logo mode on
+    setLogoVisibility(true);
+  },[logoMode])
+
   const logoClass = () => {
     if (logoMode) {
       if (logoVisibility) {
@@ -51,12 +56,20 @@ function ListItem({studio, logoMode}: ListItemProps) {
     setLogoVisibility(!logoVisibility);
   }
 
+  let logo = new Image();
+  logo.src = studio.logo ? studio.logo : "https://placehold.co/200x200"
+
+  let logoStyle = "p-7";
+  if (logo.width > logo.height) {
+    logoStyle = ""
+  }
+
   return (
     <li className="relative flex flex-row gap-4 sm:px-7 pt-6 pb-4 mt-5">
       {studio.logo &&
         <>
-          <div className={`${logoClass()} absolute flex justify-around left-0 right-0 top-0 bottom-0 px-7 pt-6 pb-4 mt-5 transition duration-750 ease-in-out`}>
-              <img className="" src={studio.logo ? studio.logo : "https://placehold.co/200x220"} />
+          <div className={`${logoClass()} absolute flex max-w-full justify-around items-center left-0 right-0 top-0 bottom-0 mt-5 transition duration-750 ease-in-out`}>
+            <img className={`${logoStyle} max-h-full w-auto`} src={logo.src} />
           </div>
           <button onClick={() => showLogo()} className={`${logoMode ? '' : 'hidden'} [@media(hover:hover)]:hidden absolute w-[50px] min-h-[50px] right-0 top-[-10px] sm:top-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full z-3`}>
             <ArrowPathIcon className={`${logoVisibility ? 'rotate-0' : 'rotate-180'} transition duration-500 dark:stroke-white w-[35px] z-4 rounded-full`} />
