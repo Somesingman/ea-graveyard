@@ -4,6 +4,7 @@ import { ArrowPathIcon, NewspaperIcon } from "@heroicons/react/24/outline";
 import { AcquiredBadge, StatusBadge } from "./Badges";
 import GameOverIcon from '../../public/icons/game-over.svg?react';
 import HalfHealthIcon from '../../public/icons/life.svg?react';
+import RevivedIcon from '../../public/icons/revived.svg?react';
 
 interface ListItemProps {
   studio: StudioObj,
@@ -14,18 +15,19 @@ function ListItem({studio, logoMode}: ListItemProps) {
   const [logoVisibility, setLogoVisibility] = useState(true);
 
   const getIcon = (status: Status) => {
+    const iconStyles = "aspect-square w-[80px] dark:fill-white dark:stroke-white";
     switch (status) {
       case Status.CLOSED:
         return (
-          <GameOverIcon className="aspect-square w-[80px] h-auto dark:fill-white dark:stroke-white" />
+          <GameOverIcon className={iconStyles} />
         )
       case Status.DECLINING:
         return (
-          <HalfHealthIcon className="aspect-square w-[80px] dark:fill-white dark:stroke-white" />
+          <HalfHealthIcon className={iconStyles} />
         )
       case Status.REVIVED:
         return (
-          <></>
+          <RevivedIcon className={iconStyles} />
         )
     }
   }
