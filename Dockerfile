@@ -11,4 +11,4 @@ ENV NODE_ENV=development
 EXPOSE 8080
 EXPOSE 9323
 RUN npm install
-CMD ["npm", "run","dev"]
+CMD ["npm", "run", "dev"]

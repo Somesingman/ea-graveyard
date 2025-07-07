@@ -70,7 +70,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
     <li className="relative flex flex-row gap-4 sm:px-7 pt-6 pb-4 mt-5">
       {studio.logo &&
         <>
-          <div className={`${logoClass()} absolute flex max-w-full justify-around items-center left-0 right-0 top-0 bottom-0 mt-5 transition duration-750 ease-in-out`}>
+          <div className={`${logoClass()} absolute flex max-w-full justify-around items-center left-0 right-0 top-0 bottom-0 sm:px-7 mt-5 transition duration-750 ease-in-out`}>
             <img className={`${logoStyle} max-h-full w-auto`} src={logo.src} />
           </div>
           <button onClick={() => showLogo()} className={`${logoMode ? '' : 'hidden'} [@media(hover:hover)]:hidden absolute w-[50px] min-h-[50px] right-0 top-[-10px] sm:top-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-full z-3`}>
