@@ -4,7 +4,7 @@ on:
     schedule:
         - cron: "0 0 * * Sat"
     push:
-        branches: "**"  
+        branches: "**" 
 
 jobs:
     link-check:
