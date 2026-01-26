@@ -59,7 +59,7 @@ function SearchBox({availableSearchTags, setSearchTag}: SearchBoxProps) {
         <div ref={searchBoxRef}  className="w-full flex flex-row">
           <input
             id="studioSearchBox"
-            placeholder="Search"
+            placeholder="Search by studio or game"
             type="text"
             value={searchValue}
             onFocus={() => handleSearchBarFocus()}

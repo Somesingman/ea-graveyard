@@ -24,6 +24,7 @@ function ListItem({studio, logoMode}: ListItemProps) {
       case Status.DECLINING:
         return (
           <HalfHealthIcon className={iconStyles} />
+          // <img src="icons/heart_2.png" className={iconStyles}/>
         )
       case Status.REVIVED:
         return (
